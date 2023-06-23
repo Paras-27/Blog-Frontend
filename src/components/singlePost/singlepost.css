@@ -1,0 +1,150 @@
+.singlePost {
+    flex: 9;
+  }
+  
+.singlePostWrapper {
+padding: 20px;
+padding-right: 0;
+display: flex;
+flex-direction: column;
+}
+
+.singlePostCats {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  color: #be9656;
+  line-height: 20px;
+  margin-bottom: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.singlePostImg {
+width: 100%;
+height: 300px;
+border-radius: 5px;
+object-fit: cover;
+}
+
+.singlePostTitle {
+text-align: center;
+margin: 10px;
+font-family: "Lora", serif;
+font-size: 30px;
+}
+
+.singlePostTitleInput {
+margin: 10px;
+font-family: "Lora", serif;
+font-size: 28px;
+text-align: center;
+border: none;
+color: gray;
+border-bottom: 1px solid lightgray;
+}
+
+.singlePostTitleInput:focus {
+outline: none;
+}
+
+.singlePostEdit {
+float: right;
+font-size: 16px;
+}
+
+.singlePostIcon {
+margin-left: 10px;
+cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+color: teal;
+}
+
+.singlePostIcon:last-child {
+color: tomato;
+}
+
+.singlePostInfo {
+margin-bottom: 20px;
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+font-family: "Varela Round", sans-serif;
+color: #b39656;
+}
+
+.singlePostDesc {
+color: #666;
+font-size: 18px;
+line-height: 25px;
+white-space: pre-line;
+margin-top: 10px;
+}
+
+.singlePostDesc::first-letter {
+margin-left: 20px;
+font-size: 30px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+.singlePostDescInput {
+border: none;
+color: #666;
+font-size: 18px;
+line-height: 25px;
+}
+
+.singlePostDescInput:focus {
+outline: none;
+}
+.singlePostButton {
+width: 100px;
+border: none;
+background-color: teal;
+padding: 5px;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+align-self: flex-end;
+margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .singlePostWrapper {
+    padding: 10px;
+  }
+
+  .singlePostTitle {
+    font-size: 24px;
+  }
+
+  .singlePostTitleInput {
+    font-size: 22px;
+  }
+
+  .singlePostInfo {
+    font-size: 14px;
+  }
+
+  .singlePostDesc {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .singlePostImg {
+    width: fit-content;
+    }
+
+  .singlePostDescInput {
+    font-size: 16px;
+  }
+
+  .singlePostButton {
+    width: 80px;
+    padding: 3px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
