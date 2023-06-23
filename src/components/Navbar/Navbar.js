@@ -54,6 +54,11 @@ const Navbar = () => {
               HOME
             </Link>
           </li>
+          <li className="topListItem">
+            <Link to="/about" className="link">
+              ABOUT
+            </Link>
+          </li>
           {user && user.role === 1 && (
             <li className="topListItem">
               <Link to="/write" className="link">
