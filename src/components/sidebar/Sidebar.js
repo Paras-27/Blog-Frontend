@@ -13,7 +13,7 @@ const Sidebar = () => {
   const [cats, setCats] = useState([]);
   useEffect(() => {
     const getCats = async () => {
-      const res = await axios.get(`/categories`);
+      const res = await axios.get(`${process.env.REACT_APP_API}/categories`);
       setCats(res.data);
     };
     getCats();
@@ -51,10 +51,34 @@ const Sidebar = () => {
       <div className="sidebarItem">
         <span className="sidebarTitle">Follow us</span>
         <div className="sidebarSocial">
-          <FaInstagramSquare className="sidebarIcon" />
-          <FaTwitter className="sidebarIcon" />
-          <FaLinkedin className="sidebarIcon" />
-          <FaFacebook className="sidebarIcon" />
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagramSquare className="topIcon" />
+          </a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter className="topIcon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/paras-upadhyay-/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="topIcon" />
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="topIcon" />
+          </a>
         </div>
       </div>
     </div>
