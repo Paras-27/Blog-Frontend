@@ -43,6 +43,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-left: 4px;
   }
   
   .topListItem {
@@ -59,3 +60,8 @@
     margin-left: 15px;
   }
   
+  @media screen and (max-width: 768px) {
+      .topLeft{
+        display: none;
+      }
+  }

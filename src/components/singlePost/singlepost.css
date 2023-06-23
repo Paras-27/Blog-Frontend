@@ -94,6 +94,8 @@ border: none;
 color: #666;
 font-size: 18px;
 line-height: 25px;
+height: 100vh;
+resize: none;
 }
 
 .singlePostDescInput:focus {
@@ -134,7 +136,7 @@ margin-top: 20px;
   }
 
   .singlePostImg {
-    width: fit-content;
+    height: 200px;
     }
 
   .singlePostDescInput {
@@ -146,5 +148,8 @@ margin-top: 20px;
     padding: 3px;
     font-size: 12px;
     margin-top: 10px;
+  }
+  .singlePostEdit{
+    margin-top: 22px;
   }
 }

@@ -63,3 +63,20 @@
     font-size: 16px;
   }
   
+  @media only screen and (max-width: 768px) {
+    .writeImg {
+      margin-left: 0;
+      width: 100%;
+      height: auto;
+    }
+    
+    .writeFormGroup {
+      margin-left: 0;
+      max-width: 100%;
+    }
+    
+    .writeInput,
+    .writeText {
+      font-size: 20px;
+    }
+  }

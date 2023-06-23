@@ -29,16 +29,13 @@
     .headerTitleSm {
         position: absolute;
         top: 13%;
-        right: 32%;
+        right: 37%;
         font-size: 22px;
     }
     .headerTitleLg{
         position: absolute;
         top: 15%;
-        right: 10%;
+        right: 24%;
         font-size: 84px;
-    }
-    .headerImg{
-        width:fit-content;
     }
   }
