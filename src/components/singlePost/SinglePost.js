@@ -12,6 +12,7 @@ const SinglePost = () => {
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [photo, setPhoto] = useState("");
   const [categories, setCat] = useState([]);
   const [updateMode, setUpdateMode] = useState(false);
 
@@ -22,6 +23,7 @@ const SinglePost = () => {
       setTitle(res.data.title);
       setDesc(res.data.desc);
       setCat(res.data.categories);
+      setPhoto(res.data.photo);
     };
     getPost();
   }, [path]);
@@ -42,6 +44,7 @@ const SinglePost = () => {
         title,
         desc,
         categories,
+        photo,
       });
       setUpdateMode(false);
     } catch (err) {}
@@ -53,6 +56,16 @@ const SinglePost = () => {
         {post.photo && (
           <img src={post.photo} alt="" className="singlePostImg"></img>
         )}
+        {updateMode && (
+          <input
+            type="text"
+            value={photo}
+            className="singlePostImgInput"
+            onChange={(e) => setPhoto(e.target.value)}
+          />
+        )}
+      </div>
+      <div className="singlePostWrapper">
         {updateMode ? (
           <input
             type="text"

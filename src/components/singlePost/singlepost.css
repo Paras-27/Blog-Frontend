@@ -24,6 +24,7 @@ width: 100%;
 height: 300px;
 border-radius: 5px;
 object-fit: cover;
+pointer-events: none;
 }
 
 .singlePostTitle {
@@ -44,6 +45,20 @@ border-bottom: 1px solid lightgray;
 }
 
 .singlePostTitleInput:focus {
+outline: none;
+}
+
+.singlePostImgInput {
+margin: 10px;
+font-family: "Lora", serif;
+font-size: 28px;
+text-align: center;
+border: none;
+color: gray;
+border-bottom: 1px solid lightgray;
+}
+
+.singlePostImgInput:focus {
 outline: none;
 }
 
@@ -80,6 +95,7 @@ font-size: 18px;
 line-height: 25px;
 white-space: pre-line;
 margin-top: 10px;
+user-select: none;
 }
 
 .singlePostDesc::first-letter {

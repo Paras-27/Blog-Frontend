@@ -25,7 +25,6 @@ const Write = () => {
         `${process.env.REACT_APP_API}/posts`,
         newPost
       );
-      console.log(res);
       window.location.replace("/post/" + res.data._id);
     } catch (err) {}
   };

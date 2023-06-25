@@ -58,6 +58,11 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none;  
+  -ms-user-select: none; 
+  user-select: none; 
 }
 
 @media screen and (max-width: 768px) {
