@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import axios from "axios";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const userRef = useRef();
@@ -31,6 +32,11 @@ const Login = () => {
 
   return (
     <div className="login">
+      <Helmet>
+        <title>Login</title>
+        <meta name="description" content="" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <span className="loginTitle">Login</span>
       <form className="loginForm" onSubmit={handleSubmit}>
         <label>Username</label>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./register.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -27,6 +28,11 @@ const Register = () => {
   };
   return (
     <div className="register">
+      <Helmet>
+        <title>Register</title>
+        <meta name="description" content="" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <span className="registerTitle">Register</span>
       <form className="registerForm" onSubmit={handleSubmit}>
         <label>Username</label>

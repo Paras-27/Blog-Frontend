@@ -1,9 +1,15 @@
 import React from "react";
 import "./About.css";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   return (
     <div className="about">
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <h1>About</h1>
       <p>Welcome to Gunjan's Bhajan Blog!</p>
       <p>

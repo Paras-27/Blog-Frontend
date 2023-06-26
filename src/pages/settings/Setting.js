@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 export default function Settings() {
   const [username, setUsername] = useState("");
@@ -39,6 +40,11 @@ export default function Settings() {
   };
   return (
     <div className="settings">
+      <Helmet>
+        <title>Profile</title>
+        <meta name="description" content="" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="settingsWrapper">
         <div className="settingsTitle">
           <span className="settingsUpdateTitle">Update Your Account</span>

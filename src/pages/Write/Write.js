@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import "./write.css";
 import axios from "axios";
 import { Context } from "../../context/Context";
+import { Helmet } from "react-helmet";
 
 const Write = () => {
   const [title, setTitle] = useState("");
@@ -31,6 +32,11 @@ const Write = () => {
 
   return (
     <div className="write" onSubmit={handleSubmit}>
+      <Helmet>
+        <title>Write</title>
+        <meta name="description" content="" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {photo && <img className="writeImg" src={photo} alt="" />}
       <form className="writeForm">
         <div className="writeFormGroup">

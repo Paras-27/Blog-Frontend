@@ -5,6 +5,7 @@ import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -22,6 +23,11 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Gunjan's Blog</title>
+        <meta name="description" content="" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <Header />
       <div className="home">
         <Posts posts={posts} />

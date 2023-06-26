@@ -4,6 +4,7 @@ import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import { Context } from "../../context/Context";
+import { Helmet } from "react-helmet";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -52,6 +53,11 @@ const SinglePost = () => {
 
   return (
     <div className="singlePost">
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={post.desc} />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="singlePostWrapper">
         {post.photo && (
           <img src={post.photo} alt="" className="singlePostImg"></img>
