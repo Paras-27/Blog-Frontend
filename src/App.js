@@ -1,11 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Setting from "./pages/settings/Setting";
 import Write from "./pages/Write/Write";
 import Single from "./pages/single/Single";
 import Home from "./pages/home/home";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import { Context } from "./context/Context";
@@ -15,17 +15,6 @@ import About from "./pages/About/About";
 
 function App() {
   const { user } = useContext(Context);
-
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/sitemap.xml") {
-      window.location.replace(
-        "https://blog-backend-paras-27.vercel.app/sitemap.xml"
-      );
-    }
-  }, [location]);
-
   const isUserAdmin = user && user.role === 1;
 
   const ProtectedRoute = ({ element: Element, ...rest }) => {
