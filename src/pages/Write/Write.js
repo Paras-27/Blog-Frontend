@@ -8,6 +8,7 @@ const Write = () => {
   const [title, setTitle] = useState("");
   const [photo, setPhoto] = useState("");
   const [desc, setDesc] = useState("");
+  const [videoLink, setVideoLink] = useState("");
   const [categories, setCat] = useState([]);
   const { user } = useContext(Context);
 
@@ -19,6 +20,7 @@ const Write = () => {
       desc,
       categories,
       photo,
+      videoLink,
     };
 
     try {
@@ -26,7 +28,7 @@ const Write = () => {
         `${process.env.REACT_APP_API}/posts`,
         newPost
       );
-      window.location.replace("/post/" + res.data._id);
+      window.location.replace("/post/" + res.data.slug);
     } catch (err) {}
   };
 
@@ -55,6 +57,14 @@ const Write = () => {
             className="writeInput"
             autoFocus={true}
             onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div className="writeFormGroup">
+          <input
+            type="text"
+            placeholder="VideoLink"
+            className="writeInput"
+            onChange={(e) => setVideoLink(e.target.value)}
           />
         </div>
         <div className="writeFormGroup">

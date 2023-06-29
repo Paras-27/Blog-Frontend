@@ -67,7 +67,7 @@
 
 @media screen and (max-width: 768px) {
   .postImg{
-
+    pointer-events: none;
     height: 181px;
     width: 100%;
   }
@@ -75,6 +75,7 @@
     width: 95%;
   }
   .postDesc{
+    user-select: none;
     width: 95%;
   }
   .post{

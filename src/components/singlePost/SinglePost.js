@@ -15,6 +15,7 @@ const SinglePost = () => {
   const [desc, setDesc] = useState("");
   const [photo, setPhoto] = useState("");
   const [categories, setCat] = useState([]);
+  const [videoLink, setVideoLink] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
 
   useEffect(() => {
@@ -25,6 +26,7 @@ const SinglePost = () => {
       setDesc(res.data.desc);
       setCat(res.data.categories);
       setPhoto(res.data.photo);
+      setVideoLink(res.data.videoLink);
     };
     getPost();
   }, [path]);
@@ -46,6 +48,7 @@ const SinglePost = () => {
         desc,
         categories,
         photo,
+        videoLink,
       });
       setUpdateMode(false);
     } catch (err) {}
@@ -59,8 +62,13 @@ const SinglePost = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
       <div className="singlePostWrapper">
-        {post.photo && (
-          <img src={post.photo} alt="" className="singlePostImg"></img>
+        {updateMode && (
+          <input
+            type="text"
+            value={videoLink}
+            className="singlePostLink"
+            onChange={(e) => setVideoLink(e.target.value)}
+          />
         )}
         {updateMode && (
           <input
@@ -69,6 +77,11 @@ const SinglePost = () => {
             className="singlePostImgInput"
             onChange={(e) => setPhoto(e.target.value)}
           />
+        )}
+      </div>
+      <div className="singlePostWrapper">
+        {post.photo && (
+          <img src={post.photo} alt="" className="singlePostImg"></img>
         )}
       </div>
       <div className="singlePostWrapper">
@@ -124,6 +137,18 @@ const SinglePost = () => {
         ) : (
           <p className="singlePostDesc">{desc}</p>
         )}
+        <div className="singlePostVideoLink">
+          {videoLink && (
+            <iframe
+              className="singlePostFrame"
+              src={videoLink}
+              title="YouTube Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          )}
+        </div>
         {updateMode && (
           <button className="singlePostDesc" onClick={handleUpdate}>
             Update

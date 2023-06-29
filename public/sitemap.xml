@@ -1,19 +1,45 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://gunjan-blog.netlify.app/</loc>
-<lastmod>2023-06-27T09:07:03+00:00</lastmod>
-</url>
-<url>
-<loc>https://gunjan-blog.netlify.app/post/6497155219ca1f2fcfb137d2</loc>
-<lastmod>2023-06-27T09:07:03+00:00</lastmod>
-</url>
-<url>
-<loc>https://gunjan-blog.netlify.app/post/649708699fa7400418af9c96</loc>
-<lastmod>2023-06-27T09:07:03+00:00</lastmod>
-</url>
-<url>
-<loc>https://gunjan-blog.netlify.app/post/64951e9eb4ebdf901e6020af</loc>
-<lastmod>2023-06-27T09:07:03+00:00</lastmod>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://gunjan-blog.netlify.app/</loc>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/post/Gaura-maiya-ke-pyare-ganesh-lalna-Bhajan-lyrics</loc>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/post/Hari-Om-Hari-Om-Satyam-Shivam-Bhajan-Lyrics</loc>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/post/Shri-Brihaspati-Dev-Ji-Ki-Aarti-Lyrics</loc>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/post/Hanuman-Tumhara-kya-kehna-Bhajan-Lyrics</loc>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/settings</loc>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/about</loc>
+    <lastmod>2023-06-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
