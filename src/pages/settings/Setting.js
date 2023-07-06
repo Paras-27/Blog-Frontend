@@ -38,6 +38,10 @@ export default function Settings() {
       dispatch({ type: "UPDATE_FAILURE" });
     }
   };
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
+
   return (
     <div className="settings">
       <Helmet>
@@ -86,6 +90,11 @@ export default function Settings() {
             </span>
           )}
         </form>
+        <div className="LogOut">
+          <button className="settingsDelete" onClick={handleLogout}>
+            {user && "LOGOUT"}
+          </button>
+        </div>
       </div>
       <Sidebar />
     </div>

@@ -59,7 +59,11 @@
     cursor: pointer;
     margin-left: 15px;
   }
-  
+  .youtube{
+    text-decoration: none;
+    color: #666;
+
+  }
   @media screen and (max-width: 768px) {
       .topLeft{
         display: none;

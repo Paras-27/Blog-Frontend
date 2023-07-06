@@ -10,10 +10,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 
 const Navbar = () => {
-  const { user, dispatch } = useContext(Context);
-  const handleLogout = () => {
-    dispatch({ type: "LOGOUT" });
-  };
+  const { user } = useContext(Context);
 
   return (
     <div className="top">
@@ -66,9 +63,12 @@ const Navbar = () => {
               </Link>
             </li>
           )}
-          <li className="topListItem" onClick={handleLogout}>
-            {user && "LOGOUT"}
-          </li>
+          <a
+            className="topListItem youtube"
+            href="https://youtube.com/@bhajan_sangeet27?sub_confirmation=1"
+          >
+            YOUTUBE
+          </a>
         </ul>
       </div>
       <div className="topRight">

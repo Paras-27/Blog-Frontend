@@ -1,0 +1,42 @@
+ 
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .contact-image {
+    flex: 1;
+  }
+  
+  .contact-image img {
+    width: 100%;
+  }
+  
+  .contact-details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #343a40;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .contact-text {
+    text-align: justify;
+  }
+  
+  .contact-details p {
+    margin-top: 10px;
+  }
+  
+  .contact-details p:not(:first-child) {
+    margin-top: 20px;
+  }
+  

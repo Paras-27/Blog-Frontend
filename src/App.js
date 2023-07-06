@@ -12,6 +12,8 @@ import { Context } from "./context/Context";
 import Pagenotfound from "./pages/Notfound/Pagenotfound.js";
 import Footer from "./components/footer/Footer";
 import About from "./pages/About/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import Contact from "./pages/ContactUs/Contactus";
 
 function App() {
   const { user } = useContext(Context);
@@ -32,6 +34,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/Contact-Us" element={<Contact />} />
           <Route path="/register" element={user ? <Home /> : <Register />} />
           <Route path="/login" element={user ? <Home /> : <Login />} />
           <Route path="/write" element={<ProtectedRoute element={Write} />} />

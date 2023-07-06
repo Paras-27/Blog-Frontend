@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+// write.js
+import React, { useContext, useState, useEffect } from "react";
 import "./write.css";
 import axios from "axios";
 import { Context } from "../../context/Context";
@@ -12,8 +13,34 @@ const Write = () => {
   const [categories, setCat] = useState([]);
   const { user } = useContext(Context);
 
+  useEffect(() => {
+    const savedContent = localStorage.getItem("writeContent");
+    if (savedContent) {
+      const { title, photo, desc, videoLink, categories } =
+        JSON.parse(savedContent);
+      setTitle(title);
+      setPhoto(photo);
+      setDesc(desc);
+      setVideoLink(videoLink);
+      setCat(categories);
+    }
+  }, []);
+
+  const handleSaveContent = () => {
+    const content = JSON.stringify({
+      title,
+      photo,
+      desc,
+      videoLink,
+      categories,
+    });
+    localStorage.setItem("writeContent", content);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    handleSaveContent(); // Save content before submitting
+
     const newPost = {
       username: user.username,
       title,
@@ -28,8 +55,36 @@ const Write = () => {
         `${process.env.REACT_APP_API}/posts`,
         newPost
       );
+      localStorage.removeItem("writeContent"); // Clear saved content after successful submission
       window.location.replace("/post/" + res.data.slug);
-    } catch (err) {}
+    } catch (err) {
+      // Handle error
+    }
+  };
+
+  const handleTitleChange = (e) => {
+    setTitle(e.target.value);
+    handleSaveContent();
+  };
+
+  const handlePhotoChange = (e) => {
+    setPhoto(e.target.value);
+    handleSaveContent();
+  };
+
+  const handleDescChange = (e) => {
+    setDesc(e.target.value);
+    handleSaveContent();
+  };
+
+  const handleVideoLinkChange = (e) => {
+    setVideoLink(e.target.value);
+    handleSaveContent();
+  };
+
+  const handleCatChange = (e) => {
+    setCat(e.target.value);
+    handleSaveContent();
   };
 
   return (
@@ -47,7 +102,8 @@ const Write = () => {
             placeholder="Image Url"
             id="fileInput"
             className="writeInput"
-            onChange={(e) => setPhoto(e.target.value)}
+            value={photo}
+            onChange={handlePhotoChange}
           />
         </div>
         <div className="writeFormGroup">
@@ -56,7 +112,8 @@ const Write = () => {
             placeholder="Title"
             className="writeInput"
             autoFocus={true}
-            onChange={(e) => setTitle(e.target.value)}
+            value={title}
+            onChange={handleTitleChange}
           />
         </div>
         <div className="writeFormGroup">
@@ -64,7 +121,8 @@ const Write = () => {
             type="text"
             placeholder="VideoLink"
             className="writeInput"
-            onChange={(e) => setVideoLink(e.target.value)}
+            value={videoLink}
+            onChange={handleVideoLinkChange}
           />
         </div>
         <div className="writeFormGroup">
@@ -72,7 +130,8 @@ const Write = () => {
             type="text"
             placeholder="Category"
             className="writeInput"
-            onChange={(e) => setCat(e.target.value)}
+            value={categories}
+            onChange={handleCatChange}
           />
         </div>
         <div className="writeFormGroup">
@@ -80,7 +139,8 @@ const Write = () => {
             placeholder="Tell your story..."
             type="text"
             className="writeInput writeText"
-            onChange={(e) => setDesc(e.target.value)}
+            value={desc}
+            onChange={handleDescChange}
           ></textarea>
         </div>
         <button className="writeSubmit" type="submit">
