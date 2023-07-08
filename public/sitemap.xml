@@ -20,7 +20,19 @@
   </url>
   <url>
     <loc>https://gunjan-blog.netlify.app/post/Shri-Brihaspati-Dev-Ji-Ki-Aarti-Lyrics</loc>
-    <lastmod>2023-06-29</lastmod>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/post/Raat-ruko-maiya-savere-chali-jaana-bhajan-Lyrics</loc>
+    <lastmod>2023-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/post/Tune-Pani-Me-Jyot-Jagayi-Re-Teri-Jay-Ho-Jwala-Mayi-Re-Lyrics</loc>
+    <lastmod>2023-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -31,15 +43,21 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gunjan-blog.netlify.app/settings</loc>
-    <lastmod>2023-06-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://gunjan-blog.netlify.app/about</loc>
     <lastmod>2023-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/privacy-policy</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gunjan-blog.netlify.app/Contact-Us</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
