@@ -9,3 +9,21 @@
     align-items: center;
 }
   
+.btn {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+    font-size: 20px !important;
+    padding-bottom: 20px;
+}
+
+.left-container{
+    display: flex;
+    flex: 9;
+    flex-wrap: wrap;
+}
