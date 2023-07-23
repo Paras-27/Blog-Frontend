@@ -3,8 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f2f2f2;
+    /* height: 100vh; */
+    /* background-color: #f2f2f2; */
+    /* background-image: url("notfound.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
   }
   
   .pnf-title {
@@ -30,4 +33,14 @@
   .pnf-btn:hover {
     background-color: #3066b5;
   }
+  .pnf-image{
+    height: 480px;
+  }
   
+@media screen and (max-width: 768px) {
+  .pnf-image{
+    height: 367px;
+    margin-bottom: 38px;
+  }
+  
+}

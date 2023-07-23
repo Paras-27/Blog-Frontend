@@ -27,14 +27,20 @@ const SinglePost = () => {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get(`${process.env.REACT_APP_API}/posts/` + path);
-      setPost(res.data);
-      setTitle(res.data.title);
-      setDesc(res.data.desc);
-      setCat(res.data.categories);
-      setPhoto(res.data.photo);
-      setVideoLink(res.data.videoLink);
-      setLoading(false); // Set loading state to false when data is fetched
+      try {
+        const res = await axios.get(
+          `${process.env.REACT_APP_API}/posts/` + path
+        );
+        setPost(res.data);
+        setTitle(res.data.title);
+        setDesc(res.data.desc);
+        setCat(res.data.categories);
+        setPhoto(res.data.photo);
+        setVideoLink(res.data.videoLink);
+        setLoading(false); // Set loading state to false when data is fetched
+      } catch (err) {
+        window.location.replace("/not-found");
+      }
     };
     getPost();
   }, [path]);
@@ -111,7 +117,7 @@ const SinglePost = () => {
               />
             )}
           </div>
-          <div className="singlePostWrapper">
+          <div className="singleImgWrapper">
             {post.photo && (
               <img src={post.photo} alt="" className="singlePostImg"></img>
             )}
