@@ -4,8 +4,8 @@
 }
 
 .postImg {
-  width: 96%;
-  height: 207px;
+  max-width: 96%;
+  max-height: 207px;
   object-fit: cover;
   border-radius: 7px;
 }
@@ -21,9 +21,9 @@
 }
 
 .postCat {
-  font-family: "Varela Round", sans-serif;
+  /* font-family: "Varela Round", sans-serif; */
   font-size: 15px;
-  color: #be9656;
+  color: #cf8e26;
   line-height: 20px;
   margin-top: 15px;
   margin-right: 10px;
@@ -31,7 +31,7 @@
 }
 
 .postTitle {
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
   font-size: 24px;
   font-weight: 700;
   margin-top: 15px;
@@ -40,15 +40,15 @@
 }
 
 .postDate {
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
   font-style: italic;
   font-size: 13px;
-  color: #999;
+  color: #373737;
   margin-top: 15px;
 }
 
 .postDesc {
-  font-family: "Varela Round", sans-serif;
+  /* font-family: "Varela Round", sans-serif; */
   font-size: 14px;
   color: #444;
   line-height: 24px;
@@ -68,8 +68,8 @@
 @media screen and (max-width: 768px) {
   .postImg{
     pointer-events: none;
-    height: 155px;
-    width: 92%;
+    max-height: 155px;
+    max-width: 92%;
   }
   .postInfo{
     width: 95%;

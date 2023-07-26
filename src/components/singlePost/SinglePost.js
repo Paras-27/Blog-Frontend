@@ -6,6 +6,7 @@ import axios from "axios";
 import { Context } from "../../context/Context";
 import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
+import LazyLoad from "react-lazyload";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -180,14 +181,18 @@ const SinglePost = () => {
             )}
             <div className="singlePostVideoLink">
               {videoLink && (
-                <iframe
-                  className="singlePostFrame"
-                  src={videoLink}
-                  title="YouTube Video"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+                <LazyLoad height={300}>
+                  {" "}
+                  {/* Set the height to be used as a placeholder */}
+                  <iframe
+                    className="singlePostFrame"
+                    src={videoLink}
+                    title="YouTube Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </LazyLoad>
               )}
             </div>
             {updateMode && (

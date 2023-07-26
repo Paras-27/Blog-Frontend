@@ -63,18 +63,20 @@ const Navbar = () => {
               </Link>
             </li>
           )}
-          <a
-            className="topListItem youtube"
-            href="https://youtube.com/@bhajan_sangeet27?sub_confirmation=1"
-          >
-            YOUTUBE
-          </a>
+          <li>
+            <a
+              className="topListItem youtube"
+              href="https://youtube.com/@bhajan_sangeet27?sub_confirmation=1"
+            >
+              YOUTUBE
+            </a>
+          </li>
         </ul>
       </div>
       <div className="topRight">
         {user ? (
           <Link to={"/settings"}>
-            <img className="topImg" src="/img/user.png" alt="" />
+            <img className="topImg" src="/img/user.webp" alt="" />
           </Link>
         ) : (
           <ul className="topList">

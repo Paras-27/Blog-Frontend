@@ -8,7 +8,7 @@ const Header = () => {
         <span className="headerTitleSm"> Gunjan's</span>
         <span className="headerTitleLg"> Blog</span>
       </div>
-      <img className="headerImg" src="img/back.jpg" alt="" />
+      <img className="headerImg" src="img/back.avif" alt="" />
     </div>
   );
 };

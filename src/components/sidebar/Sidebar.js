@@ -23,7 +23,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
-        <img className="sideImg" src="/img/prof.png" alt="" />
+        <img className="sideImg" src="/img/prof.avif" alt="" />
         <p className="intro">
           I am Gunjan, the founder of this bhajan blog. My passion for bhajans
           and spirituality has inspired me to create this platform to share the

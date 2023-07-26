@@ -11,7 +11,7 @@ const Pagenotfound = () => {
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
       </Helmet>
-      <img src={"/img/notfound.jpg"} alt="Not Found" className="pnf-image" />
+      <img src={"/img/notfound.avif"} alt="Not Found" className="pnf-image" />
       <Link to="/" className="pnf-btn">
         Go Back
       </Link>

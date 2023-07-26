@@ -18,7 +18,7 @@
 }
 
 .singlePostCats {
-  font-family: "Varela Round", sans-serif;
+  /* font-family: "Varela Round", sans-serif; */
   font-size: 14px;
   color: #be9656;
   line-height: 20px;
@@ -28,8 +28,8 @@
 }
 
 .singlePostImg {
-width: 59%;
-height: 235px;
+max-width: 51%;
+max-height: 254px;
 border-radius: 5px;
 pointer-events: none;
 
@@ -38,13 +38,13 @@ pointer-events: none;
 .singlePostTitle {
 text-align: center;
 margin: 10px;
-font-family: "Lora", serif;
+/* font-family: "Lora", serif; */
 font-size: 30px;
 }
 
 .singlePostTitleInput {
 margin: 10px;
-font-family: "Lora", serif;
+/* font-family: "Lora", serif; */
 font-size: 28px;
 text-align: center;
 border: none;
@@ -58,7 +58,7 @@ outline: none;
 
 .singlePostImgInput {
 margin: 10px;
-font-family: "Lora", serif;
+/* font-family: "Lora", serif; */
 font-size: 28px;
 text-align: center;
 border: none;
@@ -93,7 +93,7 @@ margin-bottom: 20px;
 display: flex;
 justify-content: space-between;
 font-size: 16px;
-font-family: "Varela Round", sans-serif;
+/* font-family: "Varela Round", sans-serif; */
 color: #b39656;
 }
 
@@ -141,7 +141,7 @@ margin-top: 20px;
 
 .singlePostLink{
   margin: 10px;
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
   font-size: 28px;
   text-align: center;
   border: none;
@@ -225,8 +225,8 @@ margin-top: 20px;
   }
 
   .singlePostImg {
-    height: 156px;
-    width: 78%;
+    max-height: 156px;
+    max-width: 78%;
     }
 
   .singlePostDescInput {
@@ -249,8 +249,8 @@ margin-top: 20px;
   }
 
   .singlePostFrame{
-    width: 298px;
-    height: 195px;
+    width: 295px;
+    height: 166px;
   }
   
   .relatedPostsContainer {
@@ -260,6 +260,6 @@ margin-top: 20px;
     margin: 16px 0px 16px 0px;
   }
   .relatedPostImg{
-    width: 92%;
+    max-width: 92%;
   }
 }

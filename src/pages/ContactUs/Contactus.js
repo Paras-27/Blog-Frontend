@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-image">
-        <img src="/img/contactus.jpeg" alt="contactus" />
+        <img src="/img/contactus.avif" alt="contactus" />
       </div>
       <div className="contact-details">
         <h1 className="contact-heading">CONTACT US</h1>
