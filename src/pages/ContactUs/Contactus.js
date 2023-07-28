@@ -6,17 +6,22 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-image">
-        <img src="/img/contactus.avif" alt="contactus" />
+        <img
+          src="/img/contactus.avif"
+          alt="contactus"
+          width={620}
+          height={348}
+        />
       </div>
       <div className="contact-details">
         <h1 className="contact-heading">CONTACT US</h1>
         <p className="contact-text">
-          We would love to hear from you! If you have any questions, feedback,
-          or inquiries about our products and services, please don't hesitate to
-          get in touch with us.
+          We would love to hear from you! If you want to make such cool and
+          responsive website for your buisness or any other thing than mail me
+          at the following email address
         </p>
         <p>
-          <BiMailSend />: kingp272003@gmail.com
+          <BiMailSend />: parasbupadhyay2003@gmail.com
         </p>
       </div>
     </div>

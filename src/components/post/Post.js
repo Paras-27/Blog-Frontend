@@ -10,7 +10,15 @@ export default function Post({ post, title }) {
         <meta name="description" content={post.desc} />
         <meta name="robots" content="index, follow" />
       </Helmet>
-      {post.photo && <img className="postImg" src={post.photo} alt="" />}
+      {post.photo && (
+        <img
+          className="postImg"
+          src={post.photo}
+          alt=""
+          width={369}
+          height={207}
+        />
+      )}
       <div className="postInfo">
         <div className="postCats">
           {post.categories.map((c) => (

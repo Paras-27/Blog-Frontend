@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 html,
 body,
 #root {
   height: 100%;
 }
-
+body{
+  font-family: 'Josefin Sans', cursive;
+}
 .app-container {
   display: flex;
   flex-direction: column;

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import { Helmet } from "react-helmet";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about">
       <Helmet>
@@ -10,7 +13,7 @@ const About = () => {
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
       </Helmet>
-      <h1>About</h1>
+      <h1>About Us</h1>
       <p>Welcome to Gunjan's Bhajan Blog!</p>
       <p>
         This blog is dedicated to sharing the lyrics of bhajans, devotional

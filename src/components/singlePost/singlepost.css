@@ -32,6 +32,8 @@ max-width: 51%;
 max-height: 254px;
 border-radius: 5px;
 pointer-events: none;
+aspect-ratio: 3/4;
+
 
 }
 
@@ -225,8 +227,8 @@ margin-top: 20px;
   }
 
   .singlePostImg {
-    max-height: 156px;
-    max-width: 78%;
+    max-height: 116px;
+    max-width: 58%;
     }
 
   .singlePostDescInput {

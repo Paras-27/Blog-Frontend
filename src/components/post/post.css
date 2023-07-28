@@ -26,7 +26,7 @@
   color: #cf8e26;
   line-height: 20px;
   margin-top: 15px;
-  margin-right: 10px;
+  margin-right: 31px;
   cursor: pointer;
 }
 
@@ -70,9 +70,6 @@
     pointer-events: none;
     max-height: 155px;
     max-width: 92%;
-  }
-  .postInfo{
-    width: 95%;
   }
   .postDesc{
     user-select: none;

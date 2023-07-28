@@ -106,6 +106,7 @@ const SinglePost = () => {
                 type="text"
                 value={videoLink}
                 className="singlePostLink"
+                placeholder="Add Video Link"
                 onChange={(e) => setVideoLink(e.target.value)}
               />
             )}
@@ -114,13 +115,20 @@ const SinglePost = () => {
                 type="text"
                 value={photo}
                 className="singlePostImgInput"
+                placeholder="Add Image Link"
                 onChange={(e) => setPhoto(e.target.value)}
               />
             )}
           </div>
           <div className="singleImgWrapper">
             {post.photo && (
-              <img src={post.photo} alt="" className="singlePostImg"></img>
+              <img
+                src={post.photo}
+                alt=""
+                className="singlePostImg"
+                width="452"
+                height="254"
+              ></img>
             )}
           </div>
           <div className="singlePostWrapper">
@@ -130,6 +138,7 @@ const SinglePost = () => {
                 value={title}
                 className="singlePostTitleInput"
                 autoFocus
+                placeholder="Add Post Title"
                 onChange={(e) => setTitle(e.target.value)}
               />
             ) : (
@@ -174,13 +183,14 @@ const SinglePost = () => {
               <textarea
                 className="singlePostDescInput"
                 value={desc}
+                placeholder="Update the Post"
                 onChange={(e) => setDesc(e.target.value)}
               />
             ) : (
               <p className="singlePostDesc">{desc}</p>
             )}
             <div className="singlePostVideoLink">
-              {videoLink && (
+              {!updateMode && videoLink && (
                 <LazyLoad height={300}>
                   {" "}
                   {/* Set the height to be used as a placeholder */}
@@ -200,23 +210,31 @@ const SinglePost = () => {
                 Update
               </button>
             )}
-            {relatedPosts.length > 0 && (
-              <div className="relatedPosts">
-                <h3>Related Posts</h3>
-                <div className="relatedPostsContainer">
-                  {relatedPosts.map((post) => (
-                    <Link
-                      to={`/post/${post.slug}`}
-                      className="relatedPostLink"
-                      key={post.slug}
-                    >
-                      <img src={post.photo} alt="" className="relatedPostImg" />
-                      <div className="relatedPostTitle">{post.title}</div>
-                    </Link>
-                  ))}
+            <LazyLoad height={300}>
+              {relatedPosts.length > 0 && (
+                <div className="relatedPosts">
+                  <h3>Related Posts</h3>
+                  <div className="relatedPostsContainer">
+                    {relatedPosts.map((post) => (
+                      <Link
+                        to={`/post/${post.slug}`}
+                        className="relatedPostLink"
+                        key={post.slug}
+                      >
+                        <img
+                          src={post.photo}
+                          alt=""
+                          className="relatedPostImg"
+                          width={286}
+                          height={160}
+                        />
+                        <div className="relatedPostTitle">{post.title}</div>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </LazyLoad>
           </div>
         </div>
       )}
