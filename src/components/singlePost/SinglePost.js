@@ -177,7 +177,12 @@ const SinglePost = () => {
                 onChange={(e) => setCat(e.target.value)}
               />
             ) : (
-              <div className="singlePostCats">Category : {categories}</div>
+              <div className="singlePostCats">
+                Category :
+                <Link className="link" to={`/?cat=${post.categories}`}>
+                  <b>{post.categories}</b>
+                </Link>
+              </div>
             )}
             {updateMode ? (
               <textarea
@@ -187,7 +192,18 @@ const SinglePost = () => {
                 onChange={(e) => setDesc(e.target.value)}
               />
             ) : (
-              <p className="singlePostDesc">{desc}</p>
+              <div
+                className="singlePostDesc"
+                dangerouslySetInnerHTML={{
+                  __html: desc
+                    .split(/\n\n/)
+                    .map(
+                      (paragraph, index) =>
+                        `<p  class="descpara singlePostDesc" key=${index} >${paragraph}</p>`
+                    )
+                    .join(""),
+                }}
+              />
             )}
             <div className="singlePostVideoLink">
               {!updateMode && videoLink && (
@@ -210,31 +226,29 @@ const SinglePost = () => {
                 Update
               </button>
             )}
-            <LazyLoad height={300}>
-              {relatedPosts.length > 0 && (
-                <div className="relatedPosts">
-                  <h3>Related Posts</h3>
-                  <div className="relatedPostsContainer">
-                    {relatedPosts.map((post) => (
-                      <Link
-                        to={`/post/${post.slug}`}
-                        className="relatedPostLink"
-                        key={post.slug}
-                      >
-                        <img
-                          src={post.photo}
-                          alt=""
-                          className="relatedPostImg"
-                          width={286}
-                          height={160}
-                        />
-                        <div className="relatedPostTitle">{post.title}</div>
-                      </Link>
-                    ))}
-                  </div>
+            {relatedPosts.length > 0 && (
+              <div className="relatedPosts">
+                <h3>Related Posts</h3>
+                <div className="relatedPostsContainer">
+                  {relatedPosts.map((post) => (
+                    <Link
+                      to={`/post/${post.slug}`}
+                      className="relatedPostLink"
+                      key={post.slug}
+                    >
+                      <img
+                        src={post.photo}
+                        alt=""
+                        className="relatedPostImg"
+                        width={286}
+                        height={160}
+                      />
+                      <div className="relatedPostTitle">{post.title}</div>
+                    </Link>
+                  ))}
                 </div>
-              )}
-            </LazyLoad>
+              </div>
+            )}
           </div>
         </div>
       )}

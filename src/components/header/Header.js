@@ -10,6 +10,8 @@ const Header = () => {
       </div>
       <img
         className="headerImg"
+        fetchpriority="high"
+        rel="preload"
         src="img/back.avif"
         alt=""
         width={1263}
