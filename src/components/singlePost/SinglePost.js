@@ -7,6 +7,7 @@ import { Context } from "../../context/Context";
 import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
 import LazyLoad from "react-lazyload";
+import AdComponent from "../gadscomp";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -192,18 +193,24 @@ const SinglePost = () => {
                 onChange={(e) => setDesc(e.target.value)}
               />
             ) : (
-              <div
-                className="singlePostDesc"
-                dangerouslySetInnerHTML={{
-                  __html: desc
-                    .split(/\n\n/)
-                    .map(
-                      (paragraph, index) =>
-                        `<p  class="descpara singlePostDesc" key=${index} >${paragraph}</p>`
-                    )
-                    .join(""),
-                }}
-              />
+              <div className="singlePostDesc">
+                {desc.split(/\n\n/).map((paragraph, index) => (
+                  <React.Fragment key={index}>
+                    <p className="descpara singlePostDesc">{paragraph}</p>
+                    {index % 2 === 1 && (
+                      <div
+                        className="googleAdContainer"
+                        style={{
+                          minHeight: "10vh",
+                          minWidth: "50vh",
+                        }}
+                      >
+                        <AdComponent />
+                      </div>
+                    )}
+                  </React.Fragment>
+                ))}
+              </div>
             )}
             <div className="singlePostVideoLink">
               {!updateMode && videoLink && (

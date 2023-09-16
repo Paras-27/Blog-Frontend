@@ -8,10 +8,15 @@ const Header = () => {
         <span className="headerTitleSm"> Gunjan's</span>
         <span className="headerTitleLg"> Blog</span>
       </div>
+      <link
+        rel="preload"
+        fetchpriority="high"
+        as="image"
+        href="img/back.avif"
+        type="image/avif"
+      ></link>
       <img
         className="headerImg"
-        fetchpriority="high"
-        rel="preload"
         src="img/back.avif"
         alt=""
         width={1263}
