@@ -203,7 +203,7 @@ const SinglePost = () => {
                         style={{
                           minHeight: "10vh",
                           minWidth: "50vh",
-                          margin: "100px 0px",
+                          margin: "40px 0px",
                         }}
                       >
                         <AdComponent />

@@ -60,14 +60,14 @@ const Sidebar = () => {
         <span className="sidebarTitle">Follow us</span>
         <div className="sidebarSocial">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/bhajansangeet2611/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaInstagramSquare className="topIcon" />
           </a>
           <a
-            href="https://www.twitter.com/"
+            href="https://www.twitter.com/_Paras_2003_"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -79,13 +79,6 @@ const Sidebar = () => {
             rel="noopener noreferrer"
           >
             <FaLinkedin className="topIcon" />
-          </a>
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebook className="topIcon" />
           </a>
         </div>
       </div>

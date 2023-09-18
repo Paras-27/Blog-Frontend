@@ -130,6 +130,10 @@ resize: none;
     justify-content: center;
 }
 
+.googleAdContainer ins[data-ad-status="unfilled"] {
+  display: none !important;
+}
+
 .singlePostDescInput:focus {
 outline: none;
 }
