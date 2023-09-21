@@ -7,7 +7,7 @@ import { Context } from "../../context/Context";
 import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
 import LazyLoad from "react-lazyload";
-import AdComponent from "../gadscomp";
+import AdComponent from "../gads/gadscomp";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -201,8 +201,6 @@ const SinglePost = () => {
                       <div
                         className="googleAdContainer"
                         style={{
-                          minHeight: "10vh",
-                          minWidth: "50vh",
                           margin: "40px 0px",
                         }}
                       >

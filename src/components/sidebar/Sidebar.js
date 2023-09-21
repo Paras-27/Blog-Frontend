@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./sidebar.css";
-import {
-  FaFacebook,
-  FaInstagramSquare,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaInstagramSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
 import axios from "axios";
 import { Link } from "react-router-dom";
 

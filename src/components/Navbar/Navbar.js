@@ -1,11 +1,6 @@
 import React, { useContext } from "react";
 import "../Navbar/Navbar.css";
-import {
-  FaFacebook,
-  FaInstagramSquare,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaInstagramSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 
