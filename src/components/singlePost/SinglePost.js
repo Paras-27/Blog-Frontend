@@ -6,7 +6,7 @@ import axios from "axios";
 import { Context } from "../../context/Context";
 import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
-import LazyLoad from "react-lazyload";
+// import LazyLoad from "react-lazyload";
 import AdComponent from "../gads/gadscomp";
 
 const SinglePost = () => {
@@ -22,6 +22,7 @@ const SinglePost = () => {
   const [updateMode, setUpdateMode] = useState(false);
   const [loading, setLoading] = useState(true);
   const [relatedPosts, setRelatedPosts] = useState([]);
+  const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -72,6 +73,10 @@ const SinglePost = () => {
       });
       window.location.replace("/");
     } catch (err) {}
+  };
+
+  const handlePlaceholderClick = () => {
+    setShowVideo(true);
   };
 
   const handleUpdate = async () => {
@@ -211,20 +216,33 @@ const SinglePost = () => {
                 ))}
               </div>
             )}
+            <div className="singlePostTitle">LISTEN TO THE BHAJAN HERE</div>
             <div className="singlePostVideoLink">
-              {!updateMode && videoLink && (
-                <LazyLoad height={300}>
-                  {" "}
-                  {/* Set the height to be used as a placeholder */}
-                  <iframe
-                    className="singlePostFrame"
-                    src={videoLink}
-                    title="YouTube Video"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </LazyLoad>
+              {showVideo ? (
+                <iframe
+                  className="singlePostFrame"
+                  loading="lazy"
+                  src={videoLink}
+                  title="YouTube Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <div className="center-container">
+                  <img
+                    src={post.photo} // Replace with the URL of your placeholder image
+                    alt="Video Placeholder"
+                  />
+                  <img
+                    className="play-button"
+                    onClick={handlePlaceholderClick}
+                    src="/play-icon.svg" // Replace with the actual path to your SVG file
+                    alt="Play"
+                    width="90"
+                    height="90"
+                  />
+                </div>
               )}
             </div>
             {updateMode && (
@@ -234,7 +252,12 @@ const SinglePost = () => {
             )}
             {relatedPosts.length > 0 && (
               <div className="relatedPosts">
-                <h3>Related Posts</h3>
+                <div
+                  className="singlePostTitle"
+                  style={{ margin: "10px 0px 40px 0px" }}
+                >
+                  See All Related {post.categories} Here
+                </div>
                 <div className="relatedPostsContainer">
                   {relatedPosts.map((post) => (
                     <Link
@@ -242,14 +265,16 @@ const SinglePost = () => {
                       className="relatedPostLink"
                       key={post.slug}
                     >
-                      <img
-                        src={post.photo}
-                        alt=""
-                        className="relatedPostImg"
-                        width={286}
-                        height={160}
-                      />
-                      <div className="relatedPostTitle">{post.title}</div>
+                      <div>
+                        <img
+                          src={post.photo}
+                          alt=""
+                          className="relatedPostImg"
+                          width={286}
+                          height={160}
+                        />
+                        <div className="relatedPostTitle">{post.title}</div>
+                      </div>
                     </Link>
                   ))}
                 </div>

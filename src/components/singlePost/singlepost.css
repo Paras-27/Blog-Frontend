@@ -1,7 +1,6 @@
 .singlePost {
-    flex: 9;
-
-  }
+  flex: 9;
+}
   
 .singlePostWrapper {
   gap: 11px;
@@ -19,7 +18,7 @@
 }
 
 .singlePostCats {
-  /* font-family: "Varela Round", sans-serif; */
+
   font-size: 19px;
   color: #811515;
   line-height: 20px;
@@ -39,15 +38,17 @@ aspect-ratio: 3/4;
 }
 
 .singlePostTitle {
-text-align: center;
-margin: 10px;
-/* font-family: "Lora", serif; */
-font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  color: red;
+  background-color: beige;
+  padding: 15px;
+  font-weight: 600;
 }
 
 .singlePostTitleInput {
 margin: 10px;
-/* font-family: "Lora", serif; */
 font-size: 28px;
 text-align: center;
 border: none;
@@ -61,7 +62,6 @@ outline: none;
 
 .singlePostImgInput {
 margin: 10px;
-/* font-family: "Lora", serif; */
 font-size: 28px;
 text-align: center;
 border: none;
@@ -92,12 +92,11 @@ color: tomato;
 }
 
 .singlePostInfo {
-margin-bottom: 20px;
-display: flex;
-justify-content: space-between;
-font-size: 16px;
-/* font-family: "Varela Round", sans-serif; */
-color: #811515;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #811515;
 }
 
 .singlePostDesc {
@@ -109,20 +108,20 @@ color: #811515;
   user-select: none;
 }
 
-.singlePostDesc::first-letter {
-margin-left: 20px;
-font-size: 30px;
-font-weight: 600;
-text-transform: uppercase;
-}
+/* .singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+} */
 
 .singlePostDescInput {
-border: none;
-color: #666;
-font-size: 18px;
-line-height: 25px;
-height: 100vh;
-resize: none;
+  border: none;
+  color: #666;
+  font-size: 18px;
+  line-height: 25px;
+  height: 100vh;
+  resize: none;
 }
 
 .descpara{
@@ -136,20 +135,20 @@ outline: none;
 
 
 .singlePostButton {
-width: 100px;
-border: none;
-background-color: teal;
-padding: 5px;
-color: white;
-border-radius: 5px;
-cursor: pointer;
-align-self: flex-end;
-margin-top: 20px;
+  width: 100px;
+  border: none;
+  background-color: teal;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
 }
 
 .singlePostLink{
   margin: 10px;
-  /* font-family: "Lora", serif; */
+
   font-size: 28px;
   text-align: center;
   border: none;
@@ -173,6 +172,42 @@ margin-top: 20px;
   width: 560px;
 
 }
+
+/* .singlePostTitle{
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  color: red;
+  background-color: beige;
+  padding: 15px;
+  font-weight: 600;
+} */
+
+/* youtube place holder image */
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.center-container img {
+  max-width: 70%;
+  max-height: 100%;
+}
+
+.play-button {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 
 .relatedPostsContainer {
   display: grid;
