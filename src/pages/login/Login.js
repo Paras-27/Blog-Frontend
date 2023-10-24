@@ -1,6 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
 import "./login.css";
-import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import axios from "axios";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -66,11 +65,6 @@ const Login = () => {
           LOGIN
         </button>
       </form>
-      <button className="loginRegisterButton">
-        <Link to="/register" className="link">
-          REGISTER
-        </Link>
-      </button>
     </div>
   );
 };

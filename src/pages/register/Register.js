@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./register.css";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import { Helmet } from "react-helmet";
 
@@ -66,11 +65,6 @@ const Register = () => {
           Register
         </button>
       </form>
-      <button className="registerLoginButton">
-        <Link to="/login" className="link">
-          LOGIN
-        </Link>
-      </button>
       {error && (
         <span style={{ color: "red", marginTop: "10px" }}>
           Something went wrong!

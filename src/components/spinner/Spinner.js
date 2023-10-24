@@ -4,8 +4,7 @@ import "./spinner.css";
 const Spinner = () => {
   return (
     <div className="circle-spinner-overlay">
-      <div className="circle-spinner"></div>
-      <div className="loading-text">Loading...</div>
+      <div className="loader"></div>
     </div>
   );
 };

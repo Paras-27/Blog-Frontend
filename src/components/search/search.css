@@ -1,24 +1,29 @@
-.post {
+.search-post {
   width: 385px;
-  margin: 0px 25px 40px 25px;
+  margin: 0px 19px 40px 16px;
 }
 
-.postImg {
+.search-postImg {
   max-width: 96%;
   max-height: 207px;
   object-fit: cover;
   border-radius: 7px;
-  margin-left: 8px;
+  margin-left: 0px;
   margin-top: 8px;
 }
 
-.postImg:hover{
+.search-postImg:hover{
   transform: scale(0.96);
   transition: transform 0.3s ease;
 }
 
+.search-result{
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
 
-.post-image{
+.search-post-image{
   background-color: white;
   margin-bottom: 8px;
   box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
@@ -27,17 +32,17 @@
   border-radius: 9px;
 }
 
-.postInfo {
+.search-postInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.postCats{
+.search-postCats{
   margin: 5px;
 }
 
-.postCat {
+.search-postCat {
   /* font-family: "Varela Round", sans-serif; */
   font-size: 15px;
   color: #ff2a6b;
@@ -48,7 +53,7 @@
   font-weight: 600;
 }
 
-.postTitle {
+.search-postTitle {
   /* font-family: "Josefin Sans", sans-serif; */
     font-size: 24px;
     font-weight: bold;
@@ -59,51 +64,33 @@
     color: darkslateblue;
 }
 
-.postDate {
+.search-postDate {
   /* font-family: "Lora", serif; */
   font-size: 15px;
   color: #ff2a6b;
   margin-top: 5px;
 }
 
-.postDesc {
-  /* font-family: "Varela Round", sans-serif; */
-  font-size: 14px;
-  color: #444;
-  line-height: 24px;
-  margin-top: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none; 
-  -moz-user-select: none;  
-  -ms-user-select: none; 
-  user-select: none; 
-}
 
 @media screen and (max-width: 768px) {
-  .postImg{
+  .search-main{
+      margin-left: 21px;
+  }
+  .search-postImg{
     pointer-events: none;
     max-height: 155px;
     max-width: 92%;
-    margin-left: 12px;
-  margin-top: 13px;
+    margin-left: 0px;
+    margin-top: 13px;
   }
 
-.post-image{
-  height: 180px;
-}
-  .postDesc{
-    user-select: none;
-    width: 95%;
+  .search-post-image{
+    height: 180px;
   }
-  .postDate{
+  .search-postDate{
     margin-bottom: 17px;
   }
-  .post{
+  .search-post{
     width: 304px;
     margin: 0px;
   }

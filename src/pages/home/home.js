@@ -36,11 +36,11 @@ const Home = () => {
       if (search.length) {
         setButton(false);
         res = await axios.get(`${process.env.REACT_APP_API}/posts` + search);
+        console.log(`${process.env.REACT_APP_API}/posts` + search);
         if (res.data.length === 0) {
         }
       } else {
         setButton(true);
-        // console.log(page);
         if (page === 1) {
           setPosts([]);
         }
@@ -132,7 +132,7 @@ const Home = () => {
                     ) : (
                       <>
                         {" "}
-                        Loadmore <AiOutlineReload />
+                        More Bhajans... <AiOutlineReload />
                       </>
                     )}
                   </button>

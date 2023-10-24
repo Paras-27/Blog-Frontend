@@ -10,17 +10,19 @@
 }
   
 .btn {
-    width: 100%;
+    width: fit-content; /* Allow the button to adjust its width to its content */
+    margin: 0 auto; /* Center the button horizontally within its container */
     font-size: 14px;
     font-weight: bold;
     border: none;
-    background: none;
+    background: linear-gradient(45deg, red, yellow); /* Gradient background */
     cursor: pointer;
-    color: brown;
-    font-weight: bold;
-    font-size: 20px !important;
-    padding-bottom: 20px;
+    color: white; /* Text color */
+    border-radius: 5px; /* Small border radius */
+    padding: 10px 20px; /* Adjust padding for desired size */
+    margin-bottom: 10px;
 }
+
 
 .left-container{
     display: flex;

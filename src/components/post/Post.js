@@ -11,13 +11,17 @@ export default function Post({ post, title }) {
         <meta name="robots" content="index, follow" />
       </Helmet>
       {post.photo && (
-        <img
-          className="postImg"
-          src={post.photo}
-          alt=""
-          width={369}
-          height={207}
-        />
+        <div className="post-image">
+          <a href={`/post/${post.slug}`} class="link">
+            <img
+              className="postImg"
+              src={post.photo}
+              alt=""
+              width={369}
+              height={207}
+            />
+          </a>
+        </div>
       )}
       <div className="postInfo">
         <div className="postCats">
@@ -28,12 +32,11 @@ export default function Post({ post, title }) {
         <Link to={`/post/${post.slug}`} className="link">
           <span className="postTitle">{post.title}</span>
         </Link>
-        <hr />
         <span className="postDate">
           {new Date(post.createdAt).toDateString()}
         </span>
       </div>
-      <p className="postDesc">{post.desc}</p>
+      {/* <p className="postDesc">{post.desc}</p> */}
     </div>
   );
 }

@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./sidebar.css";
-import { FaInstagramSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -26,9 +31,9 @@ const Sidebar = () => {
           height={250}
         />
         <p className="intro">
-          I am Gunjan, the founder of this bhajan blog. My passion for bhajans
-          and spirituality has inspired me to create this platform to share the
-          beauty and power of devotional music. Through this blog and{" "}
+          Hello Friends My name is Gunjan, the writer of this bhajan blog. In
+          this blog there will be lyrics of almost every bhajan. and you can
+          also listen to the tune of the bhajan on our{" "}
           <a
             className="channel"
             href="https://youtube.com/@bhajan_sangeet27?sub_confirmation=1"
@@ -55,6 +60,7 @@ const Sidebar = () => {
         <span className="sidebarTitle">Follow us</span>
         <div className="sidebarSocial">
           <a
+            className="instagram"
             href="https://www.instagram.com/bhajansangeet2611/"
             target="_blank"
             rel="noopener noreferrer"
@@ -62,18 +68,28 @@ const Sidebar = () => {
             <FaInstagramSquare className="topIcon" />
           </a>
           <a
-            href="https://www.twitter.com/_Paras_2003_"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTwitter className="topIcon" />
-          </a>
-          <a
+            className="linkedin"
             href="https://www.linkedin.com/in/paras-upadhyay-/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="topIcon" />
+          </a>
+          <a
+            className="youtube"
+            href="https://youtube.com/@bhajan_sangeet27?sub_confirmation=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube className="topIcon" />
+          </a>
+          <a
+            className="facebook"
+            href="https://www.facebook.com/profile.php?id=100080166353435"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="topIcon" />
           </a>
         </div>
       </div>

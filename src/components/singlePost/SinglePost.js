@@ -128,13 +128,9 @@ const SinglePost = () => {
           </div>
           <div className="singleImgWrapper">
             {post.photo && (
-              <img
-                src={post.photo}
-                alt=""
-                className="singlePostImg"
-                width="452"
-                height="254"
-              ></img>
+              <div className="single-post-image">
+                <img className="singlePostImg" src={post.photo} alt="" />
+              </div>
             )}
           </div>
           <div className="singlePostWrapper">
@@ -190,6 +186,11 @@ const SinglePost = () => {
                 </Link>
               </div>
             )}
+            {updateMode && (
+              <button className="singlePostDesc" onClick={handleUpdate}>
+                Update
+              </button>
+            )}
             {updateMode ? (
               <textarea
                 className="singlePostDescInput"
@@ -216,7 +217,7 @@ const SinglePost = () => {
                 ))}
               </div>
             )}
-            <div className="singlePostTitle">LISTEN TO THE BHAJAN HERE</div>
+            <div className="singleRelated">Listen To The Bhajan Here</div>
             <div className="singlePostVideoLink">
               {showVideo ? (
                 <iframe
@@ -230,30 +231,28 @@ const SinglePost = () => {
                 ></iframe>
               ) : (
                 <div className="center-container">
-                  <img
-                    src={post.photo} // Replace with the URL of your placeholder image
-                    alt="Video Placeholder"
-                  />
-                  <img
-                    className="play-button"
-                    onClick={handlePlaceholderClick}
-                    src="/play-icon.svg" // Replace with the actual path to your SVG file
-                    alt="Play"
-                    width="90"
-                    height="90"
-                  />
+                  <div className="single-post-youtube">
+                    <img
+                      className="single-post-youtube-img"
+                      src={post.photo} // Replace with the URL of your placeholder image
+                      alt="Video Placeholder"
+                    />
+                    <img
+                      className="play-button"
+                      onClick={handlePlaceholderClick}
+                      src="/play-icon.svg" // Replace with the actual path to your SVG file
+                      alt="Play"
+                      width="90"
+                      height="90"
+                    />
+                  </div>
                 </div>
               )}
             </div>
-            {updateMode && (
-              <button className="singlePostDesc" onClick={handleUpdate}>
-                Update
-              </button>
-            )}
             {relatedPosts.length > 0 && (
               <div className="relatedPosts">
                 <div
-                  className="singlePostTitle"
+                  className="singleRelated"
                   style={{ margin: "10px 0px 40px 0px" }}
                 >
                   See All Related {post.categories} Here
@@ -266,13 +265,15 @@ const SinglePost = () => {
                       key={post.slug}
                     >
                       <div>
-                        <img
-                          src={post.photo}
-                          alt=""
-                          className="relatedPostImg"
-                          width={286}
-                          height={160}
-                        />
+                        <div className="single-related-image">
+                          <img
+                            src={post.photo}
+                            alt=""
+                            className="relatedPostImg"
+                            width={286}
+                            height={160}
+                          />
+                        </div>
                         <div className="relatedPostTitle">{post.title}</div>
                       </div>
                     </Link>

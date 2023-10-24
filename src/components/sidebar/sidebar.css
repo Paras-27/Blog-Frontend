@@ -9,6 +9,11 @@
     align-items: center;
   }
 
+  .topIcon {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
   .sidebarItem {
     display: flex;
     flex-direction: column;
@@ -47,14 +52,35 @@
     width: 50%;
     margin-top: 15px;
     cursor: pointer;
+    color: mediumblue
   }
-  
+
+  .sidebarListItem :hover{
+    color: red;
+  }
+
   .sidebarSocial {
     margin-top: 15px;
     width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .sidebarSocial a{
+    color: black;
+  }
+
+  .youtube:hover{
+    color: red;
+  }
+  .facebook:hover{
+    color: #1877F2;
+  }
+  .instagram:hover{
+    color: #ff2a6b;
+  }
+  .linkedin:hover{
+    color:#0A66C2;
   }
   
   .sidebarIcon{
@@ -77,8 +103,11 @@
 }
 
 .channel{
-  color: red;
+  color: mediumblue;
   text-decoration: none;
+}
+.channel:hover{
+  color: red;
 }
 
 @media screen and (max-width: 768px) {

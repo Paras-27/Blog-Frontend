@@ -14,6 +14,7 @@ import Footer from "./components/footer/Footer";
 import About from "./pages/About/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import Contact from "./pages/ContactUs/Contactus";
+import SearchOutput from "./components/search/SearchOutput";
 
 function App() {
   const { user } = useContext(Context);
@@ -36,12 +37,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/Contact-Us" element={<Contact />} />
+          <Route path="/search" element={<SearchOutput />} />
           <Route path="/register" element={user ? <Home /> : <Register />} />
           <Route path="/login" element={user ? <Home /> : <Login />} />
           <Route path="/write" element={<ProtectedRoute element={Write} />} />
           <Route path="/settings" element={user ? <Setting /> : <Register />} />
           <Route path="/post/:postId" element={<Single />} />
-          <Route path="*" element={<Pagenotfound />} />
+          {/* <Route path="*" element={<Pagenotfound />} /> */}
           <Route path="/not-found" element={<Pagenotfound />} />
         </Routes>
       </div>

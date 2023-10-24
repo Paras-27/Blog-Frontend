@@ -4,10 +4,6 @@ import "./header.css";
 const Header = () => {
   return (
     <div className="Header">
-      <div className="headerTitles">
-        <span className="headerTitleSm"> Gunjan's</span>
-        <span className="headerTitleLg"> Blog</span>
-      </div>
       <link
         rel="preload"
         fetchpriority="high"
