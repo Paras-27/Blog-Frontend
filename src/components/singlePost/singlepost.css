@@ -61,7 +61,7 @@
   margin-bottom: 8px;
   box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
   height: 180px;
-  width: 100%;
+  width: 97%;
   border-radius: 9px;
 }
 
@@ -90,12 +90,16 @@ outline: none;
 }
 
 .singlePostImgInput {
-margin: 10px;
-font-size: 28px;
-text-align: center;
-border: none;
-color: gray;
-border-bottom: 1px solid lightgray;
+  margin: 10px;
+  font-size: 28px;
+  text-align: center;
+  border: none;
+  color: gray;
+  border-bottom: 1px solid lightgray;
+}
+
+.singlePostDate{
+  margin-right: 17px;
 }
 
 .singlePostImgInput:focus {
@@ -103,8 +107,9 @@ outline: none;
 }
 
 .singlePostEdit {
-float: right;
-font-size: 16px;
+  float: right;
+  font-size: 16px;
+  margin-right: 17px;
 }
 
 .singlePostIcon {
@@ -276,7 +281,7 @@ outline: none;
   object-fit: cover;
   border-radius: 8px;
   margin-top: 10px;
-  margin-left: 10px;  
+  margin-left: 14px;  
 }
 
 .relatedPostImg:hover{
@@ -286,7 +291,7 @@ outline: none;
 
 .relatedPostTitle {
   margin-top: 24px;
-  font-size: 19px;
+  font-size: 21px;
   text-align: center;
   line-height: 1.4;
 }
@@ -301,6 +306,8 @@ outline: none;
 @media screen and (max-width: 768px) {
   .singlePostWrapper {
     padding: 10px;
+  padding-right: 0;
+
   }
   .singleImgWrapper {
     padding: 10px 5px;
@@ -329,7 +336,7 @@ height: 140px;
 }
 
 .single-post-image{
-  width: 77%;
+  width: 73%;
   height: 173px;
 }
 

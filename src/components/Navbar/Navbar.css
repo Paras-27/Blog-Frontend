@@ -112,6 +112,12 @@
   display: flex;
   margin: 4px;
   justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+.user-name-div{
+  display: flex;
 }
 
   .topIcon {
@@ -126,6 +132,7 @@
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+    margin-top: -5px;
   }
   
   .topList {

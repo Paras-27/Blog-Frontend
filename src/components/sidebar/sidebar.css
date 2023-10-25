@@ -65,6 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 26px;
   }
   .sidebarSocial a{
     color: black;
@@ -108,6 +109,15 @@
 }
 .channel:hover{
   color: red;
+}
+
+ins.adsbygoogle[data-ad-status="unfilled"] {
+  display: none !important;
+}
+
+.googleAdContainer{
+  width: 302px;
+  height: 604px;
 }
 
 @media screen and (max-width: 768px) {

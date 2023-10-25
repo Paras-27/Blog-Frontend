@@ -92,6 +92,7 @@
   font-variation-settings: "wght" 311;
   margin-bottom: 0.8rem;
   outline: none;
+  width: 46%;
 }
 
 .footer-main-logo:hover {
@@ -109,6 +110,9 @@
     margin: 30px 0 10px;
     padding-left: 0;
 }
+.footer-main-logo{
+  width: 100%;
+}
 .footer-menu li a {
   padding: 7px 8px;
 }
@@ -118,6 +122,9 @@
 }
 .footer-social a{
   margin-right: 10px;
+}
+.copyright{
+  padding-left: 0;
 }
 
 }

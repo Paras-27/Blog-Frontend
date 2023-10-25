@@ -41,7 +41,6 @@ const Sidebar = () => {
             {" "}
             YouTube channel{" "}
           </a>
-          , I aim to spread the joy and peace that bhajans bring to our lives.
         </p>
       </div>
       <div className="sidebarItem">
@@ -93,6 +92,14 @@ const Sidebar = () => {
           </a>
         </div>
       </div>
+      {/* <div
+        className="googleAdContainer"
+        style={{
+          margin: "20px 0px",
+        }}
+      >
+        <SideAd />
+      </div> */}
     </div>
   );
 };

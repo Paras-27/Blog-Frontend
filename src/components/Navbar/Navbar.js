@@ -62,10 +62,10 @@ const Navbar = () => {
         <div className="user-panel">
           {user ? (
             <div className="userlogo">
-              <Link to={"/settings"}>
+              <Link className="user-name-div link" to={"/settings"}>
                 <img className="topImg" src="/img/user.webp" alt="" />
+                <p className="user-name">{user.username}</p>
               </Link>
-              <p className="user-name">{user.username}</p>
             </div>
           ) : (
             <ul className="topList">
