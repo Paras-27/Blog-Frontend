@@ -8,6 +8,8 @@ import { Helmet } from "react-helmet";
 import { AiOutlineReload } from "react-icons/ai";
 import Spinner from "../../components/spinner/Spinner";
 import Pagenotfound from "../Notfound/Pagenotfound";
+import "../../components/header/Header.js";
+import Header from "../../components/header/Header.js";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -114,6 +116,7 @@ const Home = () => {
           <Pagenotfound />
         ) : (
           <>
+            <Header />
             <div className="homePage">
               <div className="left-container">
                 <Posts posts={posts} />

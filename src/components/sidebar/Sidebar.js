@@ -60,7 +60,7 @@ const Sidebar = () => {
         <div className="sidebarSocial">
           <a
             className="instagram"
-            href="https://www.instagram.com/bhajansangeet2611/"
+            href="https://www.instagram.com/bhajan_sangeet_official/"
             target="_blank"
             rel="noopener noreferrer"
           >

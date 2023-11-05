@@ -1,0 +1,25 @@
+
+.carousel {
+    max-height: 400px; /* Adjust the height as needed */
+    margin-bottom: 230px;
+  }
+  
+.carousel img {
+    max-height: 600px; /* Set the maximum height to 100% of the carousel's height */
+    width: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center align the images horizontally */
+    margin-bottom: 2px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel{
+        margin-bottom: 0;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        top: 0;
+    }
+  }

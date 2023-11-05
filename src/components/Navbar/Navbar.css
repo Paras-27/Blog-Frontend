@@ -162,6 +162,11 @@
     color: #666;
 
   }
+
+  .navbar-toggler{
+    border: 1px solid #00000066;
+  }
+  
   @media screen and (max-width: 768px) {
       .header-social a{
         margin-right: 4px;

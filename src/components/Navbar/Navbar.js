@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="header-social">
           <a
             className="instagram"
-            href="https://www.instagram.com/bhajansangeet2611/"
+            href="https://www.instagram.com/bhajan_sangeet_official/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -93,7 +93,7 @@ const Navbar = () => {
               </p>
             </div>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler navbar-light"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -101,7 +101,7 @@ const Navbar = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon "></span>
             </button>
             <div
               className="collapse navbar-collapse"
