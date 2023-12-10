@@ -105,6 +105,10 @@ const SinglePost = () => {
             <title>{title}</title>
             <meta name="description" content={post.desc} />
             <meta name="robots" content="index, follow" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
           </Helmet>
           <div className="singlePostWrapper">
             {updateMode && (
@@ -254,7 +258,7 @@ const SinglePost = () => {
             {relatedPosts.length > 0 && (
               <div className="relatedPosts">
                 <div
-                  className="singleRelated"
+                  className="singleRelated related2"
                   style={{ margin: "10px 0px 40px 0px" }}
                 >
                   See All Related {post.categories} Here

@@ -74,7 +74,7 @@
 }
 
 .footer-menu li a:hover {
-  color: #ff2a6b;
+  color: orange;
 }
 
 
@@ -99,7 +99,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 761px) {
   .footer-section{
     padding: 27px 12px 36px;
     text-align: center;

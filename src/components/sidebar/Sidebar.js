@@ -31,9 +31,9 @@ const Sidebar = () => {
           height={250}
         />
         <p className="intro">
-          Hello Friends My name is Gunjan, the writer of this bhajan blog. In
-          this blog there will be lyrics of almost every bhajan. and you can
-          also listen to the tune of the bhajan on our{" "}
+          Hello Friends My name is Gunjan,I am the writer of this bhajan blog.
+          In this blog you can find lyrics of every Hindu bhajan. You can also
+          listen to the vocals of the bhajan on My{" "}
           <a
             className="channel"
             href="https://youtube.com/@bhajan_sangeet27?sub_confirmation=1"
@@ -92,14 +92,6 @@ const Sidebar = () => {
           </a>
         </div>
       </div>
-      {/* <div
-        className="googleAdContainer"
-        style={{
-          margin: "20px 0px",
-        }}
-      >
-        <SideAd />
-      </div> */}
     </div>
   );
 };

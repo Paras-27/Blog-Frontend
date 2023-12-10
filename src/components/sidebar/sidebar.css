@@ -52,7 +52,7 @@
     width: 50%;
     margin-top: 15px;
     cursor: pointer;
-    color: mediumblue
+    color: darkred
   }
 
   .sidebarListItem :hover{
@@ -104,20 +104,11 @@
 }
 
 .channel{
-  color: mediumblue;
+  color: darkred;
   text-decoration: none;
 }
 .channel:hover{
   color: red;
-}
-
-ins.adsbygoogle[data-ad-status="unfilled"] {
-  display: none !important;
-}
-
-.googleAdContainer{
-  width: 302px;
-  height: 604px;
 }
 
 @media screen and (max-width: 768px) {

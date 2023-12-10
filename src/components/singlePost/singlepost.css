@@ -351,6 +351,13 @@ height: 140px;
   font-size: 16px;
 }
 
+.related{
+  height: 48px;
+}
+
+.related2{
+  height: 75px;
+}
 
 .singlePostButton {
   width: 80px;
@@ -388,6 +395,5 @@ height: 140px;
 .singleRelated{
   font-size: 23px;
   padding: 7px;
-  height: 0%;
 }
 }
