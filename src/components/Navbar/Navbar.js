@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="container-fluid">
             <div className="logo">
               <p className="navbar-brand main-logo" href="/">
-                Gunjan's Blog
+                Bhajan Sangeet
               </p>
             </div>
             <button

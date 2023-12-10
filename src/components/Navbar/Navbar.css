@@ -11,7 +11,7 @@
   }
   
   .header-top{
-    background: #358597;
+    background: darkred;
     overflow: hidden;
     padding: 15px 30px;
   }
@@ -45,10 +45,9 @@
   font-weight: 600;
 } 
 
-/* .header-bottom {
-  padding: 11px 0;
-  position: relative;
-} */
+.header-bottom {
+  background-color: white;
+}
 
 .login-register{
   margin-right: 5px;
@@ -86,7 +85,7 @@
   transition: 700ms ease;
   font-variation-settings: "wght" 311;
   margin-bottom: 0.8rem;
-  color: rgb(66, 63, 29);
+  color: black;
   outline: none;
   text-align: center;
 }

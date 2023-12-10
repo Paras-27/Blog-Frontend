@@ -217,7 +217,9 @@ const SinglePost = () => {
                 ))}
               </div>
             )}
-            <div className="singleRelated">Listen To The Bhajan Here</div>
+            <div className="singleRelated related">
+              Listen To The Bhajan Here
+            </div>
             <div className="singlePostVideoLink">
               {showVideo ? (
                 <iframe

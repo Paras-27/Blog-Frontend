@@ -43,7 +43,7 @@ function App() {
           <Route path="/write" element={<ProtectedRoute element={Write} />} />
           <Route path="/settings" element={user ? <Setting /> : <Register />} />
           <Route path="/post/:postId" element={<Single />} />
-          {/* <Route path="*" element={<Pagenotfound />} /> */}
+          <Route path="*" element={<Pagenotfound />} />
           <Route path="/not-found" element={<Pagenotfound />} />
         </Routes>
       </div>

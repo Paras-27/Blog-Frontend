@@ -16,13 +16,13 @@ const Footer = () => {
           <div className="col-lg-6">
             <div className="logo">
               <p className="footer-main-logo" href="/">
-                Gunjan's Blog
+                Bhajan Sangeet
               </p>
             </div>
             <div className="footer-social">
               <a
                 className="instagram"
-                href="https://www.instagram.com/bhajansangeet2611/"
+                href="https://www.instagram.com/bhajan_sangeet_official/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

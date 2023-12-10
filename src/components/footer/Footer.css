@@ -5,7 +5,7 @@
 
 .set-bg{
   color: white;
-  background-color: gray;
+  background-color: darkred;
 }
 
 .container-fluid{
@@ -84,15 +84,13 @@
 
 .footer-main-logo{
   font-size: 40px;
-  /* margin: 0px;
-  padding: 0; */
   font-family: 'Gambetta', serif;
   letter-spacing: -2px;
   transition: 700ms ease;
   font-variation-settings: "wght" 311;
   margin-bottom: 0.8rem;
   outline: none;
-  width: 46%;
+  width: 50%;
 }
 
 .footer-main-logo:hover {
