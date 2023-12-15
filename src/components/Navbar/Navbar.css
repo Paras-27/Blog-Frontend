@@ -166,6 +166,9 @@
   }
   
   @media screen and (max-width: 768px) {
+      .main-logo{
+        font-size: 37px;
+      }
       .header-social a{
         margin-right: 4px;
       }

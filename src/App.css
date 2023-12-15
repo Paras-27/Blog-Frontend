@@ -6,7 +6,7 @@ body,
   height: 100%;
 }
 body{
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Josefin Sans', 'sans-serif';
   background-color: lavenderblush;
 }
 .app-container {

@@ -50,11 +50,10 @@ const SinglePost = () => {
 
   useEffect(() => {
     const fetchRelatedPosts = async () => {
-      const res = await axios.get(`${process.env.REACT_APP_API}/posts`);
-      const related = res.data.filter(
-        (post) => post.categories.includes(categories[0]) && post.slug !== path
-      );
-      setRelatedPosts(related);
+      const res = await axios.get(`${process.env.REACT_APP_API}/posts`, {
+        params: { cat: categories, slug: path },
+      });
+      setRelatedPosts(res.data);
     };
     fetchRelatedPosts();
   }, [categories, path]);

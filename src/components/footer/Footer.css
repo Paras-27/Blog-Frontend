@@ -26,7 +26,6 @@
 
 .footer-social {
   margin-top: 25px;
-  margin-left: 16px;
 }
 
 .footer-social a {
@@ -99,7 +98,7 @@
 }
 
 
-@media screen and (max-width: 761px) {
+@media screen and (max-width: 992px) {
   .footer-section{
     padding: 27px 12px 36px;
     text-align: center;
