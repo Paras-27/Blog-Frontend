@@ -92,6 +92,8 @@ const SinglePost = () => {
     } catch (err) {}
   };
 
+  const isMultipleOf3 = (number) => number % 3 === 0;
+
   return (
     <div className={`singlePost ${loading ? "spin" : ""}`}>
       {loading ? ( // Render spinner when loading state is true
@@ -263,25 +265,28 @@ const SinglePost = () => {
                   See All Related {post.categories} Here
                 </div>
                 <div className="relatedPostsContainer">
-                  {relatedPosts.map((post) => (
-                    <Link
-                      to={`/post/${post.slug}`}
-                      className="relatedPostLink"
-                      key={post.slug}
-                    >
-                      <div>
-                        <div className="single-related-image">
-                          <img
-                            src={post.photo}
-                            alt=""
-                            className="relatedPostImg"
-                            width={286}
-                            height={160}
-                          />
+                  {relatedPosts.map((post, index) => (
+                    <div>
+                      <Link
+                        to={`/post/${post.slug}`}
+                        className="relatedPostLink"
+                        key={post.slug}
+                      >
+                        <div>
+                          <div className="single-related-image">
+                            <img
+                              src={post.photo}
+                              alt=""
+                              className="relatedPostImg"
+                              width={286}
+                              height={160}
+                            />
+                          </div>
+                          <div className="relatedPostTitle">{post.title}</div>
                         </div>
-                        <div className="relatedPostTitle">{post.title}</div>
-                      </div>
-                    </Link>
+                      </Link>
+                      {isMultipleOf3(index + 1) && <AdComponent />}
+                    </div>
                   ))}
                 </div>
               </div>

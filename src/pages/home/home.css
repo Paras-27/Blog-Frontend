@@ -29,3 +29,182 @@
     flex: 9;
     flex-wrap: wrap;
 }
+
+/* Add these styles to your existing CSS file or create a new one */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .pagination li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .pagination a {
+    color: #333;
+    text-decoration: none;
+    padding: 3px 7px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination a:hover {
+    background-color: #eee;
+  }
+  
+  .pagination .active a {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .pagination .disabled a {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Optional: Center the pagination on the page */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .post-pages{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+
+  /* post related css */
+
+  .posts{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .posts{
+        justify-content: center;
+    }
+}
+
+.post {
+  width: 367px;
+  margin: 0px 15px 40px 25px;
+}
+
+.postImg {
+  max-width: 96%;
+  max-height: 207px;
+  object-fit: cover;
+  border-radius: 7px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.postImg:hover{
+  transform: scale(0.96);
+  transition: transform 0.3s ease;
+}
+
+
+.post-image{
+  background-color: white;
+  margin-bottom: 8px;
+  box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
+  height: 222px;
+  width: 100%;
+  border-radius: 9px;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postCats{
+  margin: 5px;
+}
+
+.postCat {
+  /* font-family: "Varela Round", sans-serif; */
+  font-size: 15px;
+  color: #ff2a6b;
+  line-height: 23px;
+  margin-top: 15px;
+  margin-right: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.postTitle {
+  /* font-family: "Josefin Sans", sans-serif; */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+    color: darkred;
+}
+
+.postDate {
+  /* font-family: "Lora", serif; */
+  font-size: 15px;
+  color: #ff2a6b;
+  margin-top: 5px;
+}
+
+.postDesc {
+  /* font-family: "Varela Round", sans-serif; */
+  font-size: 14px;
+  color: #444;
+  line-height: 24px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none;  
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+@media screen and (max-width: 768px) {
+  .postImg{
+    pointer-events: none;
+    max-height: 155px;
+    max-width: 92%;
+    margin-left: 12px;
+  margin-top: 13px;
+  }
+
+.post-image{
+  height: 180px;
+}
+  .postDesc{
+    user-select: none;
+    width: 95%;
+  }
+  .postDate{
+    margin-bottom: 17px;
+  }
+  .post{
+    width: 304px;
+    margin: 0px;
+  }
+}
+
+  
