@@ -91,7 +91,7 @@ const Home = () => {
     }
   };
 
-  const isMultipleOf3 = (number) => number % 3 === 0;
+  const isMultipleOf3 = (number) => number % 2 === 0;
 
   return (
     <div>
@@ -142,7 +142,11 @@ const Home = () => {
                           {new Date(post.createdAt).toDateString()}
                         </span>
                       </div>
-                      {isMultipleOf3(index + 1) && <AdComponent />}
+                      {isMultipleOf3(index + 1) && (
+                        <div className="googleAdContainer none">
+                          <AdComponent />
+                        </div>
+                      )}
                     </div>
                   );
                 })}

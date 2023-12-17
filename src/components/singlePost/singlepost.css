@@ -309,6 +309,14 @@ outline: none;
   justify-content: center;
   align-items: center;
 }
+.none{
+  display: none;
+}
+.googleAdContainer{
+  display:flex;
+  margin: 20px 0px;
+  justify-content: center;
+}
 
 @media screen and (max-width: 440px) {
   .singlePostWrapper {

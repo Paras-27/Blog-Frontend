@@ -92,7 +92,7 @@ const SinglePost = () => {
     } catch (err) {}
   };
 
-  const isMultipleOf3 = (number) => number % 3 === 0;
+  const isMultipleOf3 = (number) => number % 2 === 0;
 
   return (
     <div className={`singlePost ${loading ? "spin" : ""}`}>
@@ -209,12 +209,7 @@ const SinglePost = () => {
                   <React.Fragment key={index}>
                     <p className="descpara singlePostDesc">{paragraph}</p>
                     {index % 2 === 1 && (
-                      <div
-                        className="googleAdContainer"
-                        style={{
-                          margin: "40px 0px",
-                        }}
-                      >
+                      <div className="googleAdContainer">
                         <AdComponent />
                       </div>
                     )}
@@ -285,7 +280,9 @@ const SinglePost = () => {
                           <div className="relatedPostTitle">{post.title}</div>
                         </div>
                       </Link>
-                      {isMultipleOf3(index + 1) && <AdComponent />}
+                      <div className="googleAdContainer none">
+                        {isMultipleOf3(index + 1) && <AdComponent />}
+                      </div>
                     </div>
                   ))}
                 </div>
