@@ -96,21 +96,18 @@ const SinglePost = () => {
 
   return (
     <div className={`singlePost ${loading ? "spin" : ""}`}>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={post.desc} />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Helmet>
       {loading ? ( // Render spinner when loading state is true
         <div>
           <Spinner />
         </div>
       ) : (
         <div>
-          <Helmet>
-            <title>{title}</title>
-            <meta name="description" content={post.desc} />
-            <meta name="robots" content="index, follow" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
-            />
-          </Helmet>
           <div className="singlePostWrapper">
             {updateMode && (
               <input
