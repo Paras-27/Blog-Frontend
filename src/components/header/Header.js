@@ -13,14 +13,14 @@ const Header = () => {
           <div className="carousel-item active">
             <img
               className="d-block w-100"
-              src="img/diwali.webp"
               alt="First slide"
+              src="img/diwali.webp"
             />
           </div>
           <div className="carousel-item">
             <img
               className="d-block w-100"
-              src="img/Navratri.webp"
+              src="img/banna.webp"
               alt="Second slide"
             />
           </div>

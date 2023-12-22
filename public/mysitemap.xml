@@ -1,374 +1,333 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/murli-baj-rahi-madhuban-mein-tuta-shiv-shankar-ka-dhyan</loc>
-      <lastmod>2023-12-01</lastmod>
-      <priority>1</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    <url>
+        <loc>https://gunjan-blog.netlify.app/about</loc>
+        <lastmod>2023-06-29</lastmod>
+        <priority>0.8.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/privacy-policy</loc>
+        <lastmod>2023-07-01</lastmod>
+        <priority>0.8.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/Contact-Us</loc>
+        <lastmod>2023-07-01</lastmod>
+        <priority>0.7.0</priority>
+    </url>
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/murli-baj-rahi-madhuban-mein-tuta-shiv-shankar-ka-dhyan</loc>
+        <lastmod>2023-12-01</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/or-vaikunth-basaiya-girdhari-kyu-aana-jana-bhul-gaye</loc>
+        <lastmod>2023-12-02</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Chunariya-Maa-ki-Reshami-Koi-Gota-Lagao-Re-or-or</loc>
+        <lastmod>2023-12-02</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Maiya-Tere-Aane-Se-Bhajan-Lyrics</loc>
+        <lastmod>2023-12-03</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Ghar-me-padharo-lakshmi-maiya</loc>
+        <lastmod>2023-12-04</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Pawan-uda-kar-le-gayi-meri-maa-ki-chunriya-lyrics</loc>
+        <lastmod>2023-12-05</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/mein-jagungi-sari-raat-maiya-ke-jagrate-mein-lyrics</loc>
+        <lastmod>2023-12-06</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Ek-haar-bna-maali-sherawali-ko-pehnana-hai-lyrics</loc>
+        <lastmod>2023-12-07</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Tum-Sajti-Raho-Hum-Sajate-Rahe-Lyrics</loc>
+        <lastmod>2023-12-08</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Jara-Phool-Bicha-Do-Aangan-Mein-Bhajan-Lyrics</loc>
+        <lastmod>2023-12-09</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Lal-Phoolon-Ki-Ayyi-Hai-Bahar-Maiya-Tere-Mandir-Mein</loc>
+        <lastmod>2023-12-10</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Kothe-Upar-Kothari-maiya-Ka-Bhawan-Saja-Dungi-Bhajan-Lyrics</loc>
+        <lastmod>2023-12-11</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Jab-Maine-Bhajan-Lagaya-Maiya-Chham-Chham-Nache</loc>
+        <lastmod>2023-12-12</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/bans-ki-basuriya-kanha-ghano-itrave-bhajan-lyrics</loc>
+        <lastmod>2023-12-13</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/O-Sun-Gauri-ke-lala-ham-tere-nam-ke-deewane-Bhajan-Lyrics</loc>
+        <lastmod>2023-12-14</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Gauri-shankar-ke-angana-me-nache-ganesh-Bhajan-Lyrics</loc>
+        <lastmod>2023-12-15</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Bhari-sabha-me-aana-gajanan</loc>
+        <lastmod>2023-12-16</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/gora-khol-de-kiwad-darshan-ganpati-ke-karade-bhajan-lyrics</loc>
+        <lastmod>2023-12-17</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Paao-Mai-Ghungru-Hatho-Mai-Kangna-Aye-Gajanan-Gora-Ji-Ke-Angna</loc>
+        <lastmod>2023-12-18</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Mere-das-din-ke-mahmaan-gajanan-baithe-rahiyo</loc>
+        <lastmod>2023-12-19</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Mere-Piya-Ki-Umariya-badaye-rakhna-Lyrics</loc>
+        <lastmod>2023-12-10</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/hari-hari-doob-chadhau-kaise-mera-rootha-gajaanan-manau-kaise.</loc>
+        <lastmod>2023-12-11</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Sab-devo-ne-phool-barsaye-maharaj-gajanan-aaye</loc>
+        <lastmod>2023-12-12</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/oror-radha-kehne-lagi-apne-ghanshyam-se</loc>
+        <lastmod>2023-12-13</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/oror-krishna-janam-sun-aayi-yashoda-maiya-dede-badhai</loc>
+        <lastmod>2023-12-14</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/oror-kaisi-bajai-bansuriya-o-mohan</loc>
+        <lastmod>2023-12-15</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/radha-muje-jamuna-ke-paar-milna-oror</loc>
+        <lastmod>2023-12-16</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/or-murali-jor-ki-bajai-re-nand-laala</loc>
+        <lastmod>2023-12-21</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/jara-phoolon-se-saja-do-gokul-ko-mera-kaanha-aane-vaala-hai-or</loc>
+        <lastmod>2023-12-18</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Keh-dena-murli-wale-se-tera-yaar-sudama-aaya-hai</loc>
+        <lastmod>2023-12-17</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Boli-boli-re-koyaliya-har-har-mahadev</loc>
+        <lastmod>2023-12-10</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Meri-pooja-me-ho-rahi-der-gajanan-aajao-lyrics-hindi</loc>
+        <lastmod>2023-11-01</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Hare-tin-patto-me-kya-bal-hai-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-02</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Bina-bulaye-chali-aaungi-maiya-tohre-duariya-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-03</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Sawan-ke-mahine-me-bhole-baba-ko-manana-hai-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-04</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/kirtan-me-aayi-maa-bhawan-chhod-ke-bhajan-lyrics</loc>
+        <lastmod>2023-11-05</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/mai-to-pujungi-gauri-ganesh-bhajan-lyrics</loc>
+        <lastmod>2023-11-06</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Bhole-baba-himachal-chale-bhajan-lyrics</loc>
+        <lastmod>2023-11-07</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/lehar-lehar-lehraaye-re-jhanda-bajrang-bali-ka-bhajan-lyrics</loc>
+        <lastmod>2023-11-08</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Ram-Bhakt-Hanuman-Balaji-mere-Ghar-aana-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-09</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Kitna-pyara-hai-nago-wala-har-bhole-bhajan-lyrics</loc>
+        <lastmod>2023-11-10</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Godi-me-utha-lo-meri-maa-gajanan-chote-hai-Bhajan-lyrics</loc>
+        <lastmod>2023-11-11</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Damru-Baje-Din-Raat-Bhole-Tere-Mandir-Me-Bhajan-lyrics</loc>
+        <lastmod>2023-12-22</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Shankar-Bholenaath-sab-dukh-dur-karo-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-13</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Jhukta-hai-sara-sansar-balaji-tere-charno-me-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-14</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Mera-chota-sa-parivaar-maiya-aa-jao-ik-baar-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-15</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Raat-ruko-maiya-savere-chali-jaana-bhajan-Lyrics</loc>
+        <lastmod>2023-11-16</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Tune-Pani-Me-Jyot-Jagayi-Re-Teri-Jay-Ho-Jwala-Mayi-Re-Lyrics</loc>
+        <lastmod>2023-11-17</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Hanuman-Tumhara-kya-kehna-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-18</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Shri-Brihaspati-Dev-Ji-Ki-Aarti-Lyrics</loc>
+        <lastmod>2023-11-19</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Hari-Om-Hari-Om-Satyam-Shivam-Bhajan-Lyrics</loc>
+        <lastmod>2023-11-20</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://gunjan-blog.netlify.app/post/Mere-Ram-Daya-Ke-Sagar-Hai-Bhajan-Lyrics</loc>
+        <lastmod>2023-12-22</lastmod>
+        <priority>1.0</priority>
+    </url>
 
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/or-vaikunth-basaiya-girdhari-kyu-aana-jana-bhul-gaye</loc>
-      <lastmod>2023-12-02</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Chunariya-Maa-ki-Reshami-Koi-Gota-Lagao-Re-or-or</loc>
-      <lastmod>2023-12-02</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Maiya-Tere-Aane-Se-Bhajan-Lyrics</loc>
-      <lastmod>2023-12-03</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Ghar-me-padharo-lakshmi-maiya</loc>
-      <lastmod>2023-12-04</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Pawan-uda-kar-le-gayi-meri-maa-ki-chunriya-lyrics</loc>
-      <lastmod>2023-12-05</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/mein-jagungi-sari-raat-maiya-ke-jagrate-mein-lyrics</loc>
-      <lastmod>2023-12-06</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Ek-haar-bna-maali-sherawali-ko-pehnana-hai-lyrics</loc>
-      <lastmod>2023-12-07</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Tum-Sajti-Raho-Hum-Sajate-Rahe-Lyrics</loc>
-      <lastmod>2023-12-08</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Jara-Phool-Bicha-Do-Aangan-Mein-Bhajan-Lyrics</loc>
-      <lastmod>2023-12-09</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Lal-Phoolon-Ki-Ayyi-Hai-Bahar-Maiya-Tere-Mandir-Mein</loc>
-      <lastmod>2023-12-10</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Kothe-Upar-Kothari-maiya-Ka-Bhawan-Saja-Dungi-Bhajan-Lyrics</loc>
-      <lastmod>2023-12-11</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Jab-Maine-Bhajan-Lagaya-Maiya-Chham-Chham-Nache</loc>
-      <lastmod>2023-12-12</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/bans-ki-basuriya-kanha-ghano-itrave-bhajan-lyrics</loc>
-      <lastmod>2023-12-13</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/O-Sun-Gauri-ke-lala-ham-tere-nam-ke-deewane-Bhajan-Lyrics</loc>
-      <lastmod>2023-12-14</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Gauri-shankar-ke-angana-me-nache-ganesh-Bhajan-Lyrics</loc>
-      <lastmod>2023-12-15</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Bhari-sabha-me-aana-gajanan</loc>
-      <lastmod>2023-12-16</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/gora-khol-de-kiwad-darshan-ganpati-ke-karade-bhajan-lyrics</loc>
-      <lastmod>2023-12-17</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Paao-Mai-Ghungru-Hatho-Mai-Kangna-Aye-Gajanan-Gora-Ji-Ke-Angna</loc>
-      <lastmod>2023-12-18</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Mere-das-din-ke-mahmaan-gajanan-baithe-rahiyo</loc>
-      <lastmod>2023-12-19</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Mere-Piya-Ki-Umariya-badaye-rakhna-Lyrics</loc>
-      <lastmod>2023-12-10</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/hari-hari-doob-chadhau-kaise-mera-rootha-gajaanan-manau-kaise.</loc>
-      <lastmod>2023-12-11</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Sab-devo-ne-phool-barsaye-maharaj-gajanan-aaye</loc>
-      <lastmod>2023-12-12</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/oror-radha-kehne-lagi-apne-ghanshyam-se</loc>
-      <lastmod>2023-12-13</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/oror-krishna-janam-sun-aayi-yashoda-maiya-dede-badhai</loc>
-      <lastmod>2023-12-14</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/oror-kaisi-bajai-bansuriya-o-mohan</loc>
-      <lastmod>2023-12-15</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/radha-muje-jamuna-ke-paar-milna-oror</loc>
-      <lastmod>2023-12-16</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/or-murali-jor-ki-bajai-re-nand-laala</loc>
-      <lastmod>2023-12-17</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/jara-phoolon-se-saja-do-gokul-ko-mera-kaanha-aane-vaala-hai-or</loc>
-      <lastmod>2023-12-18</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Keh-dena-murli-wale-se-tera-yaar-sudama-aaya-hai</loc>
-      <lastmod>2023-12-17</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Boli-boli-re-koyaliya-har-har-mahadev</loc>
-      <lastmod>2023-12-10</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Meri-pooja-me-ho-rahi-der-gajanan-aajao-lyrics-hindi</loc>
-      <lastmod>2023-11-01</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Hare-tin-patto-me-kya-bal-hai-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-02</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Bina-bulaye-chali-aaungi-maiya-tohre-duariya-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-03</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Sawan-ke-mahine-me-bhole-baba-ko-manana-hai-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-04</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/kirtan-me-aayi-maa-bhawan-chhod-ke-bhajan-lyrics</loc>
-      <lastmod>2023-11-05</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/mai-to-pujungi-gauri-ganesh-bhajan-lyrics</loc>
-      <lastmod>2023-11-06</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Bhole-baba-himachal-chale-bhajan-lyrics</loc>
-      <lastmod>2023-11-07</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/lehar-lehar-lehraaye-re-jhanda-bajrang-bali-ka-bhajan-lyrics</loc>
-      <lastmod>2023-11-08</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Ram-Bhakt-Hanuman-Balaji-mere-Ghar-aana-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-09</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Kitna-pyara-hai-nago-wala-har-bhole-bhajan-lyrics</loc>
-      <lastmod>2023-11-10</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Godi-me-utha-lo-meri-maa-gajanan-chote-hai-Bhajan-lyrics</loc>
-      <lastmod>2023-11-11</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Damru-Baje-Din-Raat-Bhole-Tere-Mandir-Me-Bhajan-lyrics</loc>
-      <lastmod>2023-11-12</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Shankar-Bholenaath-sab-dukh-dur-karo-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-13</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Jhukta-hai-sara-sansar-balaji-tere-charno-me-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-14</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Mera-chota-sa-parivaar-maiya-aa-jao-ik-baar-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-15</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Raat-ruko-maiya-savere-chali-jaana-bhajan-Lyrics</loc>
-      <lastmod>2023-11-16</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Tune-Pani-Me-Jyot-Jagayi-Re-Teri-Jay-Ho-Jwala-Mayi-Re-Lyrics</loc>
-      <lastmod>2023-11-17</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Hanuman-Tumhara-kya-kehna-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-18</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Shri-Brihaspati-Dev-Ji-Ki-Aarti-Lyrics</loc>
-      <lastmod>2023-11-19</lastmod>
-      <priority>1</priority>
-  </url>
-
-
-  <url>
-      <loc>https://gunjan-blog.netlify.app/post/Hari-Om-Hari-Om-Satyam-Shivam-Bhajan-Lyrics</loc>
-      <lastmod>2023-11-20</lastmod>
-      <priority>1</priority>
-  </url>
-
-  <url>
-    <loc>https://gunjan-blog.netlify.app/about</loc>
-    <lastmod>2023-06-29</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gunjan-blog.netlify.app/privacy-policy</loc>
-    <lastmod>2023-07-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gunjan-blog.netlify.app/Contact-Us</loc>
-    <lastmod>2023-07-01</lastmod>
-    <priority>0.7</priority>
-  </url>
 </urlset>

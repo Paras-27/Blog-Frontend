@@ -22,7 +22,6 @@ const SinglePost = () => {
   const [updateMode, setUpdateMode] = useState(false);
   const [loading, setLoading] = useState(true);
   const [relatedPosts, setRelatedPosts] = useState([]);
-  const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -74,10 +73,6 @@ const SinglePost = () => {
     } catch (err) {}
   };
 
-  const handlePlaceholderClick = () => {
-    setShowVideo(true);
-  };
-
   const handleUpdate = async () => {
     try {
       await axios.put(`${process.env.REACT_APP_API}/posts/${post._id}`, {
@@ -101,6 +96,29 @@ const SinglePost = () => {
         <meta name="description" content={post.desc} />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            mainEntityOfPage: {
+              "@type": "MusicComposition",
+              "@id": `https://gunjan-blog.netlify.app/post/${path}`,
+            },
+            headline: title,
+            image: [post.photo],
+            datePublished: post.createdAt,
+            dateModified: post.updatedAt,
+            author: {
+              "@type": "Person",
+              name: post.username,
+            },
+            description: post.desc,
+            publisher: {
+              "@type": "Person",
+              name: "Gunjan Upadhyay",
+            },
+          })}
+        </script>
       </Helmet>
       {loading ? ( // Render spinner when loading state is true
         <div>
@@ -218,35 +236,13 @@ const SinglePost = () => {
               Listen To The Bhajan Here
             </div>
             <div className="singlePostVideoLink">
-              {showVideo ? (
-                <iframe
-                  className="singlePostFrame"
-                  loading="lazy"
-                  src={videoLink}
-                  title="YouTube Video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              ) : (
-                <div className="center-container">
-                  <div className="single-post-youtube">
-                    <img
-                      className="single-post-youtube-img"
-                      src={post.photo} // Replace with the URL of your placeholder image
-                      alt="Video Placeholder"
-                    />
-                    <img
-                      className="play-button"
-                      onClick={handlePlaceholderClick}
-                      src="/play-icon.svg" // Replace with the actual path to your SVG file
-                      alt="Play"
-                      width="90"
-                      height="90"
-                    />
-                  </div>
-                </div>
-              )}
+              <iframe
+                className="singlePostFrame"
+                src={videoLink}
+                title="YouTube Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
             {relatedPosts.length > 0 && (
               <div className="relatedPosts">
