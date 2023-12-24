@@ -93,10 +93,10 @@ const SinglePost = () => {
     <div className={`singlePost ${loading ? "spin" : ""}`}>
       <Helmet>
         <title>{title}</title>
-        <meta name="description" content={post.desc} />
+        <meta name="description" content={post.desc} data-react-helmet="true" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="application/ld+json">
+        <script type="application/ld+json" className="yoast-schema-graph">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
