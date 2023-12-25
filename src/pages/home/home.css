@@ -88,14 +88,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    justify-content: center;
 }
-
-@media screen and (max-width: 768px) {
-    .posts{
-        justify-content: center;
-    }
-}
-
 .post {
   width: 367px;
   margin: 0px 15px 40px 25px;
@@ -211,7 +205,7 @@
   }
   .googleAdContainer{
     display:flex;
-    margin: 20px 0px;
+    margin: 2px 0px;
     justify-content: center;
   }
 }

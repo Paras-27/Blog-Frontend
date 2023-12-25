@@ -38,11 +38,10 @@ const Home = () => {
       const pageValue = parseInt(pageParam, 10);
       setInitialPage(pageValue - 1);
       handlePageClick({ selected: pageValue - 1 }); // Call your function to fetch data based on the page
-      window.scrollTo(0, 300);
     } else {
       fetchPosts();
-      window.scrollTo(0, 0);
     }
+    window.scrollTo(0, 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
 

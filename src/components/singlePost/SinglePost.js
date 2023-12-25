@@ -147,11 +147,15 @@ const SinglePost = () => {
             )}
           </div>
           <div className="singleImgWrapper">
-            {post.photo && (
-              <div className="single-post-image">
-                <img className="singlePostImg" src={post.photo} alt="" />
-              </div>
-            )}
+            <div className="singlePostVideoLink ">
+              <iframe
+                className="singlePostFrame"
+                src={videoLink}
+                title="YouTube Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           <div className="singlePostWrapper">
             {updateMode ? (
@@ -232,26 +236,11 @@ const SinglePost = () => {
                 ))}
               </div>
             )}
-            <div className="singleRelated related">
-              Listen To The Bhajan Here
-            </div>
-            <div className="singlePostVideoLink">
-              <iframe
-                className="singlePostFrame"
-                src={videoLink}
-                title="YouTube Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+            <div className="singleRelated related2">
+              See All Related {post.categories} Here
             </div>
             {relatedPosts.length > 0 && (
               <div className="relatedPosts">
-                <div
-                  className="singleRelated related2"
-                  style={{ margin: "10px 0px 40px 0px" }}
-                >
-                  See All Related {post.categories} Here
-                </div>
                 <div className="relatedPostsContainer">
                   {relatedPosts.map((post, index) => (
                     <div>
@@ -260,14 +249,14 @@ const SinglePost = () => {
                         className="relatedPostLink"
                         key={post.slug}
                       >
-                        <div>
+                        <div className="related-post-image-title">
                           <div className="single-related-image">
                             <img
                               src={post.photo}
                               alt=""
                               className="relatedPostImg"
                               width={286}
-                              height={160}
+                              height={180}
                             />
                           </div>
                           <div className="relatedPostTitle">{post.title}</div>

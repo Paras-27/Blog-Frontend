@@ -27,14 +27,14 @@
   cursor: pointer;
 }
 
-.singlePostImg {
+/* .singlePostImg {
   width: 90%;
   height: 202px;
   border-radius: 5px;
   pointer-events: none;
-}
+} */
 
-.single-post-image{
+/* .single-post-image{
   background-color: white;
   margin-bottom: 18px;
   box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
@@ -43,7 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .singlePostTitle {
   /* font-family: "Josefin Sans", sans-serif; */
@@ -56,22 +56,13 @@
   color: darkred;
 }
 
-.single-related-image{
-  background-color: white;
-  margin-bottom: 8px;
-  box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
-  height: 180px;
-  width: 97%;
-  border-radius: 9px;
-}
-
 .singleRelated {
   text-align: center;
   font-size: 28px;
   color: white;
   padding: 11px;
   font-weight: 600;
-  margin: 10px 0px 38px;
+  margin: 10px 0px 15px 0;
   box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
   height: 61px;
   width: 98%;
@@ -201,18 +192,22 @@ outline: none;
   }
 
 .singlePostVideoLink {
-  margin-top: 20px;
-  padding-right: 22px;
-  padding-left: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  width: 53%;
+  box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
+  height: 380px;
 }
 
 .singlePostFrame{
-  height: 315px;
-  width: 560px;
-
+  height: 330px;
+  width: 94%;
+  border-radius: 10px;
 }
+
+
 
 /* .singlePostTitle{
   height: 20px;
@@ -226,6 +221,18 @@ outline: none;
 } */
 
 /* youtube place holder image */
+
+.single-related-image{
+  background-color: white;
+  margin-bottom: 8px;
+  box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
+  height: 200px;
+  width: 97%;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .relatedPostsContainer {
   display: grid;
@@ -247,8 +254,6 @@ outline: none;
   max-height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  margin-top: 10px;
-  margin-left: 10px;  
 }
 
 .relatedPostImg:hover{
@@ -274,18 +279,43 @@ outline: none;
 }
 .googleAdContainer{
   display:flex;
-  margin: 20px 0px;
+  margin: 2px 0px;
   justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
+.singlePostVideoLink {
+  width: 74%;
+  height: 380px;
+}
   .singlePostFrame{
-    height: 300px;
-    max-width: 100%;
+    height: 330px;
+    width: 91%;
+    border-radius: 10px;
   }
 }
+@media screen and (max-width: 850px) {
 
-@media screen and (max-width: 440px) {
+.singlePostVideoLink {
+  width: 81%;
+  height: 325px;
+}
+  .singlePostFrame{
+    height: 280px;
+    width: 91%;
+    border-radius: 10px;
+  }
+  .relatedPostsContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 16px 0px 16px 0px;
+  }
+  .related-post-image-title{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 550px) {
   .singlePostWrapper {
     padding: 10px;
   padding-right: 0;
@@ -343,15 +373,15 @@ height: 140px;
   margin-top: 22px;
 }
 
-.singlePostVideoLink{
-  display: flex;
-  justify-content: center;
+.singlePostVideoLink {
+  width: 80%;
+  height: 270px;
 }
-
-.singlePostFrame{
-  max-width: 100%;
-  height: 280px;
-}
+  .singlePostFrame{
+    height: 230px;
+    width: 89%;
+    border-radius: 10px;
+  }
 
 .relatedPostsContainer {
   display: grid;
