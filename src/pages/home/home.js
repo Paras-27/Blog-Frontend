@@ -96,8 +96,65 @@ const Home = () => {
     <div>
       <Helmet>
         <title>Bhajan Sangeet</title>
-        <meta name="description" content="" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
         <meta name="robots" content="index, follow" />
+        <meta
+          name="description"
+          content="Gunjan's Blog - A blog website for sharing bhajan lyrics and video song."
+        />
+        <meta name="keywords" content="blog, travel, bhajan, recipe, story" />
+        <meta name="category" content="travel, bhajan, recipe, story" />
+
+        {/* <!-- canonical tag --> */}
+        <link rel="canonical" href="https://gunjan-blog.netlify.app/" />
+
+        {/* <!-- Open Graph Tags --> */}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Gunjan-Blog - Find All Bhajan Lyrics In Hindi"
+        />
+        <meta
+          property="og:description"
+          content="Find lyrics of every regional bhajan in Hindi as well as in English."
+        />
+        <meta property="og:url" content="https://gunjan-blog.netlify.app/" />
+        <meta property="og:site_name" content="Gunjan-Blog" />
+        <meta
+          property="article:modified_time"
+          content="2023-12-14T17:59:22+00:00"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <script type="application/ld+json" class="yoast-schema-graph">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "MusicComposition",
+            "@id": "https://gunjan-blog.netlify.app/",
+            "url": "https://gunjan-blog.netlify.app/",
+            "name": "Gunjan-Blog - Find All Bhajan Lyrics In Hindi",
+            "datePublished": "2023-07-21T12:39:28+00:00",
+            "dateModified": "2023-12-14T17:59:22+00:00",
+            "description": "Find lyrics of every regional bhajan in Hindi as well as in English.",
+            "inLanguage": ["en-US", "hi"],
+            "potentialAction": {
+              "@type": "ReadAction",
+              "target": ["https://gunjan-blog.netlify.app/"]
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Gunjan Upadhyay"
+            },
+            "lyricist": {
+              "@type": "Person",
+              "name": "Gunjan Upadhyay"
+            },
+            "keywords": "Bhajan, Shree, Mata Rani, Mata ji, Maiya, Ganpati, Ganesh, Gajanan, Krishna, Radhe Krishna, Kanha, Kanhaiya, Krishan, Kishan, Bajan, bhjn, Bajrang Bali, Hanuman, Balaji, Bageshwar Dham Sarkar, Pashupatinath, Shiv, Bholenath, Bhole baba, Vishnu, Radha Rani"
+          }`}
+        </script>
       </Helmet>
       <div className={`home ${loading ? "spinner" : ""}`}>
         {loading ? ( // Render spinner when loading state is true

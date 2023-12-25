@@ -96,6 +96,30 @@ const SinglePost = () => {
         <meta name="description" content={post.desc} data-react-helmet="true" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="category" content={categories} />
+
+        {/* <!-- canonical tag --> */}
+        <link
+          rel="canonical"
+          href={`https://gunjan-blog.netlify.app/post/${path}`}
+        />
+
+        {/* <!-- Open Graph Tags --> */}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={desc} />
+        <meta
+          property="og:url"
+          content={`https://gunjan-blog.netlify.app/post/${path}`}
+        />
+        <meta property="og:site_name" content="Gunjan-Blog" />
+        <meta
+          property="article:modified_time"
+          content="2023-12-14T17:59:22+00:00"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
         <script type="application/ld+json" className="yoast-schema-graph">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -105,14 +129,14 @@ const SinglePost = () => {
               "@id": `https://gunjan-blog.netlify.app/post/${path}`,
             },
             headline: title,
-            image: [post.photo],
+            image: [photo],
             datePublished: post.createdAt,
             dateModified: post.updatedAt,
             author: {
               "@type": "Person",
               name: post.username,
             },
-            description: post.desc,
+            description: desc,
             publisher: {
               "@type": "Person",
               name: "Gunjan Upadhyay",
