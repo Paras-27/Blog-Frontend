@@ -183,7 +183,6 @@ const SinglePost = () => {
                   loading="lazy"
                   src={videoLink}
                   title="YouTube Video"
-                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
@@ -194,8 +193,7 @@ const SinglePost = () => {
                   className="singlePostFrame"
                   src={post.photo} // Replace with the URL of your placeholder image
                   onClick={handlePlaceholderClick}
-                  loading="lazy"
-                  decoding="async"
+                  fetchpriority="high"
                   alt="Video Placeholder"
                 />
                 <img
@@ -205,8 +203,7 @@ const SinglePost = () => {
                   alt="Play"
                   width="90"
                   height="90"
-                  loading="lazy"
-                  decoding="async"
+                  fetchpriority="high"
                 />
               </div>
             )}

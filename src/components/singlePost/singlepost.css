@@ -11,7 +11,7 @@
 }
 .singleImgWrapper {
   gap: 11px;
-  padding: 11px 20px;
+  /* padding: 11px 20px; */
   padding-right: 0;
   display: flex;
   justify-content: center;
@@ -26,24 +26,6 @@
   margin-right: 10px;
   cursor: pointer;
 }
-
-/* .singlePostImg {
-  width: 90%;
-  height: 202px;
-  border-radius: 5px;
-  pointer-events: none;
-} */
-
-/* .single-post-image{
-  background-color: white;
-  margin-bottom: 18px;
-  box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
-  height: 237px;
-  border-radius: 9px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .singlePostTitle {
   /* font-family: "Josefin Sans", sans-serif; */
@@ -202,15 +184,15 @@ outline: none;
     justify-content: center;
     align-items: center;
     border-radius: 9px;
-    width: 53%;
+    width: 540px;
     box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
-    height: 380px;
+    height: 320px;
     margin-bottom: 20px;
   }
   
   .singlePostFrame{
-    height: 330px;
-    width: 94%;
+    height: 280px;
+    width: 500px;
     border-radius: 10px;
   }
   
@@ -289,28 +271,7 @@ outline: none;
   justify-content: center;
 }
 
-@media screen and (max-width: 1000px) {
-.singlePostVideoLink {
-  width: 74%;
-  height: 380px;
-}
-  .singlePostFrame{
-    height: 330px;
-    width: 91%;
-    border-radius: 10px;
-  }
-}
 @media screen and (max-width: 850px) {
-
-.singlePostVideoLink {
-  width: 81%;
-  height: 325px;
-}
-  .singlePostFrame{
-    height: 280px;
-    width: 91%;
-    border-radius: 10px;
-  }
   .relatedPostsContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -321,16 +282,12 @@ outline: none;
     width: 80%;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 560px) {
   .singlePostWrapper {
     padding: 10px;
   padding-right: 0;
 
-  }
-  .singleImgWrapper {
-    padding: 10px 5px;
-  }
-
+  } 
   .singlePostTitle {
     font-size: 24px;
   }
@@ -347,15 +304,6 @@ outline: none;
   font-size: 21px;
   line-height: 31px;
 }
-
-/* .singlePostImg {
-height: 140px;
-} */
-
-/* .single-post-image{
-  width: 73%;
-  height: 173px;
-} */
 
 .singlePostDescInput {
   font-size: 16px;

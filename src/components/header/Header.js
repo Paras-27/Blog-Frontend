@@ -22,6 +22,8 @@ const Header = () => {
               className="d-block w-100"
               src="img/banna.webp"
               alt="Second slide"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="carousel-item">
@@ -29,6 +31,8 @@ const Header = () => {
               className="d-block w-100"
               src="img/maha shivratri.webp"
               alt="Third slide"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
