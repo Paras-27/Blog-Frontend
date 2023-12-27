@@ -181,6 +181,8 @@ const Home = () => {
                               alt=""
                               width={369}
                               height={207}
+                              loading="lazy"
+                              decoding="async"
                             />
                           </a>
                         </div>

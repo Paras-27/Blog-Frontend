@@ -6,7 +6,7 @@ import axios from "axios";
 import { Context } from "../../context/Context";
 import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
-// import LazyLoad from "react-lazyload";
+import LazyLoad from "react-lazyload";
 import AdComponent from "../gads/gadscomp";
 
 const SinglePost = () => {
@@ -22,6 +22,7 @@ const SinglePost = () => {
   const [updateMode, setUpdateMode] = useState(false);
   const [loading, setLoading] = useState(true);
   const [relatedPosts, setRelatedPosts] = useState([]);
+  const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -88,6 +89,10 @@ const SinglePost = () => {
   };
 
   const isMultipleOf3 = (number) => number % 2 === 0;
+
+  const handlePlaceholderClick = () => {
+    setShowVideo(true);
+  };
 
   return (
     <div className={`singlePost ${loading ? "spin" : ""}`}>
@@ -171,15 +176,40 @@ const SinglePost = () => {
             )}
           </div>
           <div className="singleImgWrapper">
-            <div className="singlePostVideoLink ">
-              <iframe
-                className="singlePostFrame"
-                src={videoLink}
-                title="YouTube Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            {showVideo ? (
+              <div className="singlePostVideoLink ">
+                <iframe
+                  className="singlePostFrame"
+                  loading="lazy"
+                  src={videoLink}
+                  title="YouTube Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            ) : (
+              <div className="singlePostVideoLink">
+                <img
+                  className="singlePostFrame"
+                  src={post.photo} // Replace with the URL of your placeholder image
+                  onClick={handlePlaceholderClick}
+                  loading="lazy"
+                  decoding="async"
+                  alt="Video Placeholder"
+                />
+                <img
+                  className="play-button"
+                  onClick={handlePlaceholderClick}
+                  src="/play-icon.svg" // Replace with the actual path to your SVG file
+                  alt="Play"
+                  width="90"
+                  height="90"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            )}
           </div>
           <div className="singlePostWrapper">
             {updateMode ? (
@@ -275,13 +305,21 @@ const SinglePost = () => {
                       >
                         <div className="related-post-image-title">
                           <div className="single-related-image">
-                            <img
-                              src={post.photo}
-                              alt=""
-                              className="relatedPostImg"
-                              width={286}
-                              height={180}
-                            />
+                            <LazyLoad
+                              className="relatedPostLazy"
+                              offset={100}
+                              once
+                            >
+                              <img
+                                src={post.photo}
+                                alt=""
+                                className="relatedPostImg"
+                                loading="lazy"
+                                decoding="async"
+                                width={286}
+                                height={180}
+                              />
+                            </LazyLoad>
                           </div>
                           <div className="relatedPostTitle">{post.title}</div>
                         </div>
