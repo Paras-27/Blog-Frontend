@@ -9,12 +9,19 @@ const About = () => {
   return (
     <div className="about">
       <Helmet>
-        <title>About</title>
+        <title>About Us</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <h1>About Us</h1>
       <p>Welcome to Gunjan's Bhajan Blog!</p>
+      <img
+        className="sideImg"
+        src="/img/prof.avif"
+        alt=""
+        width={248}
+        height={250}
+      />
       <p>
         This blog is dedicated to sharing the lyrics of bhajans, devotional
         songs, and spiritual music. We aim to provide a collection of meaningful

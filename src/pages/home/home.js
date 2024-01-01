@@ -108,6 +108,8 @@ const Home = () => {
         <meta name="category" content="travel, bhajan, recipe, story" />
 
         {/* <!-- canonical tag --> */}
+        <link rel="preload" as="image" href="img/diwali.webp" />
+
         <link rel="canonical" href="https://gunjan-blog.netlify.app/" />
 
         {/* <!-- Open Graph Tags --> */}
@@ -172,21 +174,19 @@ const Home = () => {
                 {posts.map((post, index) => {
                   return (
                     <div className="post">
-                      {post.photo && (
-                        <div className="post-image">
-                          <a href={`/post/${post.slug}`} class="link">
-                            <img
-                              className="postImg"
-                              src={post.photo}
-                              alt=""
-                              width={369}
-                              height={207}
-                              loading="lazy"
-                              decoding="async"
-                            />
-                          </a>
-                        </div>
-                      )}
+                      <div className="post-image">
+                        <a href={`/post/${post.slug}`} className="link">
+                          <img
+                            className="postImg"
+                            src={post.photo}
+                            alt=""
+                            width={369}
+                            height={207}
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </a>
+                      </div>
                       <div className="postInfo">
                         <div className="postCats">
                           {post.categories.map((c) => (

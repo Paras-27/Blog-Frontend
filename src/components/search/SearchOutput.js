@@ -19,12 +19,12 @@ const SearchOutput = () => {
             ? "No Posts Found"
             : `Found ${values?.results.length} Related Posts`}
         </h1>
-        <div className="d-flex flex-wrap mt-4">
+        <div className="search-main-element">
           {values?.results.map((post) => (
             <div className="search-post">
               {post.photo && (
                 <div className="search-post-image">
-                  <a href={`/post/${post.slug}`} class="link">
+                  <a href={`/post/${post.slug}`} className="link">
                     <img
                       className="search-postImg"
                       src={post.photo}

@@ -34,3 +34,11 @@ p {
 .subscribe-button a:hover {
   background-color: #cc0000;
 }
+
+.sideImg{
+  max-height: 250px;
+  max-width: 250px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 7px;
+}

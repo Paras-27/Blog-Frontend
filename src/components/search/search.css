@@ -21,6 +21,7 @@
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: bolder;
+  margin-top: 20px;
 }
 
 .search-post-image{
@@ -73,8 +74,10 @@
 
 
 @media screen and (max-width: 768px) {
-  .search-main{
-      margin-left: 21px;
+  .search-main-element{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .search-postImg{
     pointer-events: none;

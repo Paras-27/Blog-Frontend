@@ -122,13 +122,6 @@ color: tomato;
   user-select: none;
 }
 
-/* .singlePostDesc::first-letter {
-  margin-left: 20px;
-  font-size: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-} */
-
 .singlePostDescInput {
   border: none;
   color: #666;
@@ -328,12 +321,12 @@ outline: none;
 }
 
 .singlePostVideoLink {
-  width: 80%;
-  height: 270px;
+  width: 71%;
+  height: 202px;
 }
   .singlePostFrame{
-    height: 230px;
-    width: 89%;
+    height: 169px;
+    width: 88%;
     border-radius: 10px;
   }
 

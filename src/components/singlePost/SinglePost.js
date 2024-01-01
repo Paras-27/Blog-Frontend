@@ -102,6 +102,7 @@ const SinglePost = () => {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="category" content={categories} />
+        <link rel="preload" as="image" href={post.photo} />
 
         {/* <!-- canonical tag --> */}
         <link
@@ -134,12 +135,12 @@ const SinglePost = () => {
               "@id": `https://gunjan-blog.netlify.app/post/${path}`,
             },
             headline: title,
-            image: [photo],
+            image: [post.photo],
             datePublished: post.createdAt,
             dateModified: post.updatedAt,
             author: {
               "@type": "Person",
-              name: post.username,
+              name: "Gunjan Upadhyay",
             },
             description: desc,
             publisher: {
@@ -178,23 +179,27 @@ const SinglePost = () => {
           <div className="singleImgWrapper">
             {showVideo ? (
               <div className="singlePostVideoLink ">
-                <iframe
-                  className="singlePostFrame"
-                  loading="lazy"
-                  src={videoLink}
-                  title="YouTube Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                {videoLink ? (
+                  <iframe
+                    className="singlePostFrame"
+                    loading="lazy"
+                    src={videoLink}
+                    title="YouTube Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <h4>Video will be uploaded soon...</h4>
+                )}
               </div>
             ) : (
               <div className="singlePostVideoLink">
                 <img
                   className="singlePostFrame"
-                  src={post.photo} // Replace with the URL of your placeholder image
+                  src={post.photo}
                   onClick={handlePlaceholderClick}
                   fetchpriority="high"
-                  alt="Video Placeholder"
+                  alt=""
                 />
                 <img
                   className="play-button"
