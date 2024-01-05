@@ -15,6 +15,7 @@ import About from "./pages/About/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import Contact from "./pages/ContactUs/Contactus";
 import SearchOutput from "./components/search/SearchOutput";
+import MultiplexAdComponent from "./components/gads/multiplex.js";
 
 function App() {
   const { user } = useContext(Context);
@@ -46,6 +47,9 @@ function App() {
           <Route path="*" element={<Pagenotfound />} />
           <Route path="/not-found" element={<Pagenotfound />} />
         </Routes>
+      </div>
+      <div className="googleAdContainer">
+        <MultiplexAdComponent />
       </div>
       <Footer />
     </div>

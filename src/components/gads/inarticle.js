@@ -19,6 +19,7 @@ export default class InArAdComponent extends React.Component {
           data-ad-format="fluid"
           data-ad-client="ca-pub-6606321105150999"
           data-ad-slot="6798867122"
+          data-full-width-responsive="false"
         />
       </div>
     );

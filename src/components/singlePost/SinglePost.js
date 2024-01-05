@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
 import LazyLoad from "react-lazyload";
 import InArticleAdComponent from "../gads/inarticle";
-import MultiplexAdComponent from "../gads/multiplex";
+// import MultiplexAdComponent from "../gads/multiplex";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -238,6 +238,9 @@ const SinglePost = () => {
                 )}
               </h1>
             )}
+            <div className="googleAdContainer">
+              <InArticleAdComponent />
+            </div>
             <div className="singlePostInfo">
               <span className="singlePostAuthor">
                 Author :
@@ -330,7 +333,6 @@ const SinglePost = () => {
               </div>
             )}
           </div>
-          <MultiplexAdComponent />
         </div>
       )}
     </div>
