@@ -7,7 +7,8 @@ import { Context } from "../../context/Context";
 import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
 import LazyLoad from "react-lazyload";
-import AdComponent from "../gads/gadscomp";
+import InArticleAdComponent from "../gads/inarticle";
+import MultiplexAdComponent from "../gads/multiplex";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -87,9 +88,6 @@ const SinglePost = () => {
       setUpdateMode(false);
     } catch (err) {}
   };
-
-  const isMultipleOf3 = (number) => number % 2 === 0;
-
   const handlePlaceholderClick = () => {
     setShowVideo(true);
   };
@@ -285,7 +283,7 @@ const SinglePost = () => {
                     <p className="descpara singlePostDesc">{paragraph}</p>
                     {index % 2 === 1 && (
                       <div className="googleAdContainer">
-                        <AdComponent />
+                        <InArticleAdComponent />
                       </div>
                     )}
                   </React.Fragment>
@@ -298,7 +296,7 @@ const SinglePost = () => {
             {relatedPosts.length > 0 && (
               <div className="relatedPosts">
                 <div className="relatedPostsContainer">
-                  {relatedPosts.map((post, index) => (
+                  {relatedPosts.map((post) => (
                     <div>
                       <Link
                         to={`/post/${post.slug}`}
@@ -326,15 +324,13 @@ const SinglePost = () => {
                           <div className="relatedPostTitle">{post.title}</div>
                         </div>
                       </Link>
-                      <div className="googleAdContainer none">
-                        {isMultipleOf3(index + 1) && <AdComponent />}
-                      </div>
                     </div>
                   ))}
                 </div>
               </div>
             )}
           </div>
+          <MultiplexAdComponent />
         </div>
       )}
     </div>

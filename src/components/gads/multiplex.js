@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-export default class DisplayAdComponent extends React.Component {
+export default class MultiplexAdComponent extends React.Component {
   componentDidMount() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
@@ -11,9 +11,9 @@ export default class DisplayAdComponent extends React.Component {
         <ins
           className="adsbygoogle"
           style={{ display: "block" }}
+          data-ad-format="autorelaxed"
           data-ad-client="ca-pub-6606321105150999"
-          data-ad-slot="4055051300"
-          data-full-width-responsive="true"
+          data-ad-slot="6145627987"
         />
       </div>
     );
