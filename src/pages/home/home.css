@@ -207,6 +207,7 @@
     display:flex;
     margin: 2px 0px;
     justify-content: center;
+    overflow: hidden;
   }
 }
 

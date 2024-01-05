@@ -263,6 +263,7 @@ outline: none;
   margin: 2px 0px;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 850px) {

@@ -24,4 +24,5 @@ body{
   margin: 2px 0px;
   justify-content: center;
   width: 97%;
+  overflow: hidden;
 }
