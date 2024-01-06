@@ -8,7 +8,8 @@ import Pagenotfound from "../Notfound/Pagenotfound";
 import "../../components/header/Header.js";
 import Header from "../../components/header/Header.js";
 import ReactPaginate from "react-paginate";
-import AdComponent from "../../components/gads/gadscomp.js";
+import DisplayAdComponent from "../../components/gads/gadscomp.js";
+import InArticleAdComponent from "../../components/gads/inarticle.js";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -37,7 +38,7 @@ const Home = () => {
     if (pageParam) {
       const pageValue = parseInt(pageParam, 10);
       setInitialPage(pageValue - 1);
-      handlePageClick({ selected: pageValue - 1 }); // Call your function to fetch data based on the page
+      handlePageClick({ selected: pageValue - 1 });
     } else {
       fetchPosts();
     }
@@ -159,18 +160,20 @@ const Home = () => {
         </script>
       </Helmet>
       <div className={`home ${loading ? "spinner" : ""}`}>
-        {loading ? ( // Render spinner when loading state is true
+        {loading ? (
           <div>
             <Spinner />
           </div>
         ) : posts.length === 0 ? (
-          // Render the NotFound component if no posts were found
           <Pagenotfound />
         ) : (
           <>
             <Header />
             <div className="homePage">
               <div className="posts">
+                <div className="googleAdContainer">
+                  <InArticleAdComponent />
+                </div>
                 {posts.map((post, index) => {
                   return (
                     <div className="post">
@@ -202,7 +205,7 @@ const Home = () => {
                       </div>
                       {isMultipleOf3(index + 1) && (
                         <div className="googleAdContainer none">
-                          <AdComponent />
+                          <DisplayAdComponent />
                         </div>
                       )}
                     </div>

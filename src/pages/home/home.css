@@ -10,16 +10,16 @@
 }
   
 .btn {
-    width: fit-content; /* Allow the button to adjust its width to its content */
-    margin: 0 auto; /* Center the button horizontally within its container */
+    width: fit-content; 
+    margin: 0 auto; 
     font-size: 14px;
     font-weight: bold;
     border: none;
-    background: linear-gradient(45deg, red, yellow); /* Gradient background */
+    background: linear-gradient(45deg, red, yellow); 
     cursor: pointer;
-    color: white; /* Text color */
-    border-radius: 5px; /* Small border radius */
-    padding: 10px 20px; /* Adjust padding for desired size */
+    color: white; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
     margin-bottom: 10px;
 }
 
@@ -29,8 +29,6 @@
     flex: 9;
     flex-wrap: wrap;
 }
-
-/* Add these styles to your existing CSS file or create a new one */
 
 .pagination {
     display: flex;
@@ -130,7 +128,6 @@
 }
 
 .postCat {
-  /* font-family: "Varela Round", sans-serif; */
   font-size: 15px;
   color: #ff2a6b;
   line-height: 23px;
@@ -141,7 +138,6 @@
 }
 
 .postTitle {
-  /* font-family: "Josefin Sans", sans-serif; */
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -152,14 +148,12 @@
 }
 
 .postDate {
-  /* font-family: "Lora", serif; */
   font-size: 15px;
   color: #ff2a6b;
   margin-top: 5px;
 }
 
 .postDesc {
-  /* font-family: "Varela Round", sans-serif; */
   font-size: 14px;
   color: #444;
   line-height: 24px;

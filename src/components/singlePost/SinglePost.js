@@ -284,7 +284,7 @@ const SinglePost = () => {
                 {desc.split(/\n\n/).map((paragraph, index) => (
                   <React.Fragment key={index}>
                     <p className="descpara singlePostDesc">{paragraph}</p>
-                    {index % 2 === 1 && (
+                    {index % 2 === 0 && (
                       <div className="googleAdContainer">
                         <InArticleAdComponent />
                       </div>
@@ -295,6 +295,9 @@ const SinglePost = () => {
             )}
             <div className="singleRelated related2">
               See All Related {post.categories} Here
+            </div>
+            <div className="googleAdContainer">
+              <InArticleAdComponent />
             </div>
             {relatedPosts.length > 0 && (
               <div className="relatedPosts">

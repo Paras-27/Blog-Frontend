@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-export default class InArAdComponent extends React.Component {
+export default class InArticleAdComponent extends React.Component {
   componentDidMount() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
