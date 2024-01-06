@@ -20,7 +20,7 @@ body{
 }
 .googleAdContainer{
   display:flex;
-  margin: 2px 0px;
+  margin: 3px 0px;
   justify-content: center;
   width: 100%;
 }
