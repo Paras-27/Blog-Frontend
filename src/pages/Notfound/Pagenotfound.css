@@ -28,7 +28,7 @@
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-    margin-bottom: 27px;
+    margin: 27px 0px;
   }
   
   .pnf-btn:hover {
@@ -36,6 +36,7 @@
   }
   .pnf-image{
     height: 480px;
+    margin-top: 20px;
   }
   
 @media screen and (max-width: 768px) {

@@ -8,7 +8,6 @@ import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
 import LazyLoad from "react-lazyload";
 import InArticleAdComponent from "../gads/inarticle";
-// import MultiplexAdComponent from "../gads/multiplex";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -41,7 +40,7 @@ const SinglePost = () => {
         setCat(res.data.categories);
         setPhoto(res.data.photo);
         setVideoLink(res.data.videoLink);
-        setLoading(false); // Set loading state to false when data is fetched
+        setLoading(false);
       } catch (err) {
         window.location.replace("/not-found");
       }
@@ -101,14 +100,10 @@ const SinglePost = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="category" content={categories} />
         <link rel="preload" as="image" href={post.photo} />
-
-        {/* <!-- canonical tag --> */}
         <link
           rel="canonical"
           href={`https://gunjan-blog.netlify.app/post/${path}`}
         />
-
-        {/* <!-- Open Graph Tags --> */}
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
@@ -148,7 +143,7 @@ const SinglePost = () => {
           })}
         </script>
       </Helmet>
-      {loading ? ( // Render spinner when loading state is true
+      {loading ? (
         <div>
           <Spinner />
         </div>
@@ -202,7 +197,7 @@ const SinglePost = () => {
                 <img
                   className="play-button"
                   onClick={handlePlaceholderClick}
-                  src="/play-icon.svg" // Replace with the actual path to your SVG file
+                  src="/play-icon.svg"
                   alt="Play"
                   width="90"
                   height="90"
