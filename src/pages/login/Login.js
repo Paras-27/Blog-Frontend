@@ -2,7 +2,6 @@ import React, { useContext, useRef, useState } from "react";
 import "./login.css";
 import { Context } from "../../context/Context";
 import axios from "axios";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
 const Login = () => {
@@ -58,7 +57,11 @@ const Login = () => {
             className="showPasswordButton"
             onClick={togglePasswordVisibility}
           >
-            {showPassword ? <FaEye /> : <FaEyeSlash />}
+            {showPassword ? (
+              <img className="svg" src="/svg/eye.svg" alt="" />
+            ) : (
+              <img className="svg" src="/svg/eye-slash.svg" alt="" />
+            )}
           </button>
         </div>
         <button className="loginButton" type="submit" disabled={isFetching}>

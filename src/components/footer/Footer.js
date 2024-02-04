@@ -1,13 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import {
-  FaInstagramSquare,
-  FaLinkedin,
-  FaTwitter,
-  FaFacebook,
-  FaYoutube,
-} from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer-section set-bg">
@@ -15,9 +8,9 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="logo">
-              <p className="footer-main-logo" href="/">
+              <Link to="/" className="footer-main-logo">
                 Bhajan Sangeet
-              </p>
+              </Link>
             </div>
             <div className="footer-social">
               <a
@@ -26,7 +19,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagramSquare className="topIcon" />
+                <img className="svg topIcon" src="/svg/ig.svg" alt="" />
               </a>
               <a
                 className="twitter"
@@ -34,7 +27,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTwitter className="topIcon" />
+                <img className="svg topIcon" src="/svg/twt.svg" alt="" />
               </a>
               <a
                 className="linkedin"
@@ -42,7 +35,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin className="topIcon" />
+                <img className="svg topIcon" src="/svg/lnkd.svg" alt="" />
               </a>
               <a
                 className="youtube"
@@ -50,7 +43,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaYoutube className="topIcon" />
+                <img className="svg topIcon" src="/svg/yt.svg" alt="" />
               </a>
               <a
                 className="facebook"
@@ -58,7 +51,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook className="topIcon" />
+                <img className="svg topIcon" src="/svg/fb.svg" alt="" />
               </a>
             </div>
           </div>

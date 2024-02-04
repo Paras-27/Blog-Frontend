@@ -3,7 +3,6 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Setting from "./pages/settings/Setting";
 import Write from "./pages/Write/Write";
-import Single from "./pages/single/Single";
 import Home from "./pages/home/home";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Register from "./pages/register/Register";
@@ -15,6 +14,7 @@ import About from "./pages/About/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import Contact from "./pages/ContactUs/Contactus";
 import SearchOutput from "./components/search/SearchOutput";
+import SinglePost from "./components/singlePost/SinglePost.js";
 
 function App() {
   const { user } = useContext(Context);
@@ -42,7 +42,7 @@ function App() {
           <Route path="/login" element={user ? <Home /> : <Login />} />
           <Route path="/write" element={<ProtectedRoute element={Write} />} />
           <Route path="/settings" element={user ? <Setting /> : <Register />} />
-          <Route path="/post/:postId" element={<Single />} />
+          <Route path="/post/:postId" element={<SinglePost />} />
           <Route path="/not-found" element={<Pagenotfound />} />
         </Routes>
       </div>

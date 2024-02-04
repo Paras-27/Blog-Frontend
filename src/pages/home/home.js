@@ -176,7 +176,7 @@ const Home = () => {
                 </div>
                 {posts.map((post, index) => {
                   return (
-                    <div className="post">
+                    <div className="post" key={post._id}>
                       <div className="post-image">
                         <a href={`/post/${post.slug}`} className="link">
                           <img
@@ -192,8 +192,10 @@ const Home = () => {
                       </div>
                       <div className="postInfo">
                         <div className="postCats">
-                          {post.categories.map((c) => (
-                            <span className="postCat">{c}</span>
+                          {post.categories.map((c, index) => (
+                            <span className="postCat" key={index}>
+                              {c}
+                            </span>
                           ))}
                         </div>
                         <Link to={`/post/${post.slug}`} className="link">

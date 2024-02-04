@@ -1,10 +1,16 @@
 import React from "react";
-import { BiMailSend } from "react-icons/bi";
 import "./Contact.css";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <div className="contact-container">
+      <Helmet>
+        <title>Contact Us</title>
+        <meta name="description" content="" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
       <div className="contact-image">
         <img
           src="/img/contactus.avif"
@@ -21,7 +27,8 @@ const Contact = () => {
           at the following email address
         </p>
         <p>
-          <BiMailSend />: parasbupadhyay2003@gmail.com
+          <img className="svg" src="/svg/email.svg" alt="" /> :
+          parasbupadhyay2003@gmail.com
         </p>
       </div>
     </div>

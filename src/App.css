@@ -24,3 +24,7 @@ body{
   justify-content: center;
   width: 100%;
 }
+.svg{
+  width: 24px;
+  height: auto;
+}

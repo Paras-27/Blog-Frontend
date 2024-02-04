@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./singlepost.css";
-import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import { Context } from "../../context/Context";
@@ -119,7 +118,7 @@ const SinglePost = () => {
         />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <script type="application/ld+json" className="yoast-schema-graph">
+        <script defer type="application/ld+json" className="yoast-schema-graph">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
@@ -148,8 +147,8 @@ const SinglePost = () => {
           <Spinner />
         </div>
       ) : (
-        <div>
-          <div className="singlePostWrapper">
+        <div className="single-main">
+          <div className="singlePostUpdateWrapper">
             {updateMode && (
               <input
                 type="text"
@@ -197,7 +196,7 @@ const SinglePost = () => {
                 <img
                   className="play-button"
                   onClick={handlePlaceholderClick}
-                  src="/play-icon.svg"
+                  src="/svg/play-icon.svg"
                   alt="Play"
                   width="90"
                   height="90"
@@ -221,12 +220,16 @@ const SinglePost = () => {
                 {title}
                 {user?.role && (
                   <div className="singlePostEdit">
-                    <FaEdit
-                      className="singlePostIcon"
+                    <img
+                      className="svg singlePostIcon"
+                      src="/svg/edit.svg"
+                      alt=""
                       onClick={() => setUpdateMode(true)}
                     />
-                    <FaTrash
-                      className="singlePostIcon"
+                    <img
+                      className="svg singlePostIcon"
+                      src="/svg/trash.svg"
+                      alt=""
                       onClick={handleDelete}
                     />
                   </div>
@@ -275,7 +278,7 @@ const SinglePost = () => {
                 onChange={(e) => setDesc(e.target.value)}
               />
             ) : (
-              <div className="singlePostDesc">
+              <div className="singlePostDesc desc-container">
                 {desc.split(/\n\n/).map((paragraph, index) => (
                   <React.Fragment key={index}>
                     <p className="descpara singlePostDesc">{paragraph}</p>

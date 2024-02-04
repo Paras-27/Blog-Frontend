@@ -22,10 +22,14 @@
 
 .header-social a {
     color: #fff;
-    margin-right: 35px;
+    margin-right: 25px;
 }
 
-.facebook:hover{
+img:hover{
+  color: #000;
+}
+
+.facebook img:hover{
   color: #1877F2;
 }
 .instagram:hover{
@@ -92,6 +96,7 @@
 .main-logo:hover {
   font-variation-settings: "wght" 582; 
   letter-spacing: 0.5px;
+  color: darkred;
 }
 
 .nav-link{

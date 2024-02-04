@@ -68,7 +68,6 @@
     cursor: not-allowed;
   }
   
-  /* Optional: Center the pagination on the page */
   .pagination-container {
     display: flex;
     justify-content: center;
@@ -143,7 +142,7 @@
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
     color: darkred;
 }
 

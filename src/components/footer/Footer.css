@@ -50,11 +50,6 @@
   color: #1DA1F2;
 }
 
-/* 
-.footer-social a:hover {
-  color:#ff2a6b
-} */
-
 
 .copyright {
   margin-bottom: 0;
@@ -90,11 +85,14 @@
   margin-bottom: 0.8rem;
   outline: none;
   width: 50%;
+  text-decoration: none;
+  color: white;
 }
 
 .footer-main-logo:hover {
   font-variation-settings: "wght" 582; 
   letter-spacing: 0.5px;
+  color: white;
 }
 
 

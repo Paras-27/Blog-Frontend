@@ -25,6 +25,7 @@ const SearchInput = () => {
         className="d-flex search-form"
         role="search"
         onSubmit={handleSubmit}
+        id="form"
       >
         <input
           className="form-control me-2"
@@ -33,6 +34,7 @@ const SearchInput = () => {
           aria-label="Search"
           value={values.keyword}
           onChange={(e) => setValues({ ...values, keyword: e.target.value })}
+          name="search"
         />
         <button className="btn btn-outline-success" type="submit">
           Search

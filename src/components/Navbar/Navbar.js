@@ -1,11 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../Navbar/Navbar.css";
-import {
-  FaInstagramSquare,
-  FaLinkedin,
-  FaFacebook,
-  FaYoutube,
-} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Context } from "../../context/Context";
@@ -31,32 +25,36 @@ const Navbar = () => {
             href="https://www.instagram.com/bhajan_sangeet_official/"
             target="_blank"
             rel="noopener noreferrer"
+            alt="Instagram"
           >
-            <FaInstagramSquare className="topIcon" />
+            <img className="svg topIcon" src="/svg/ig.svg" alt="" />
           </a>
           <a
             className="linkedin"
             href="https://www.linkedin.com/in/paras-upadhyay-/"
             target="_blank"
             rel="noopener noreferrer"
+            alt="linkedIn"
           >
-            <FaLinkedin className="topIcon" />
+            <img className="svg topIcon linkedin" src="/svg/lnkd.svg" alt="" />
           </a>
           <a
             className="youtube"
             href="https://youtube.com/@bhajan_sangeet27?sub_confirmation=1"
             target="_blank"
             rel="noopener noreferrer"
+            alt="youtube"
           >
-            <FaYoutube className="topIcon" />
+            <img className="svg topIcon" src="/svg/yt.svg" alt="" />
           </a>
           <a
             className="facebook"
             href="https://www.facebook.com/profile.php?id=100080166353435"
             target="_blank"
             rel="noopener noreferrer"
+            alt="facebook"
           >
-            <FaFacebook className="topIcon" />
+            <img className="svg topIcon" src="/svg/fb.svg" alt="" />
           </a>
         </div>
         <div className="user-panel">
@@ -81,16 +79,15 @@ const Navbar = () => {
               </li>
             </ul>
           )}
-          {/* <div className="userMain">{user && user.username}</div> */}
         </div>
       </div>
       <div className="header-bottom">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <div className="logo">
-              <p className="navbar-brand main-logo" href="/">
+              <Link to="/" className="navbar-brand main-logo">
                 Bhajan Sangeet
-              </p>
+              </Link>
             </div>
             <button
               className="navbar-toggler navbar-light"
@@ -136,8 +133,8 @@ const Navbar = () => {
                     Categories
                   </Link>
                   <ul className="dropdown-menu">
-                    {cats.map((c) => (
-                      <li>
+                    {cats.map((c, index) => (
+                      <li key={index}>
                         <Link
                           to={`/?cat=${c.name}`}
                           className="link dropdown-item spacing nav-link"

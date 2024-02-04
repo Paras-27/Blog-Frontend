@@ -3,6 +3,12 @@
   margin: 0px 19px 40px 16px;
 }
 
+.search-main-element{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .search-postImg {
   max-width: 96%;
   max-height: 207px;
@@ -44,7 +50,6 @@
 }
 
 .search-postCat {
-  /* font-family: "Varela Round", sans-serif; */
   font-size: 15px;
   color: #ff2a6b;
   line-height: 23px;
@@ -55,18 +60,16 @@
 }
 
 .search-postTitle {
-  /* font-family: "Josefin Sans", sans-serif; */
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
     color: darkslateblue;
 }
 
 .search-postDate {
-  /* font-family: "Lora", serif; */
   font-size: 15px;
   color: #ff2a6b;
   margin-top: 5px;
@@ -74,11 +77,6 @@
 
 
 @media screen and (max-width: 768px) {
-  .search-main-element{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .search-postImg{
     pointer-events: none;
     max-height: 155px;
