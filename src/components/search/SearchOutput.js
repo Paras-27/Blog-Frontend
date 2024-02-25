@@ -12,6 +12,7 @@ const SearchOutput = () => {
         <title>Search For Bhajans</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <div className="text-center">
         <h1 className="search-result">

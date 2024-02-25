@@ -11,13 +11,20 @@
       url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     background-size: cover;
   }
+
+  .register {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
   
   .loginTitle {
     font-size: 50px;
   }
   
   .loginForm {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -26,12 +33,14 @@
     margin: 10px 0;
   }
   
+  .password {
+    padding-right: 49px !important;
+  }
   .loginInput {
     padding: 10px;
-    background-color: white;
+    background-color: lightgray;
     border: none;
     border-radius: 10px;
-    padding-right: 49px;
   }
   
   .loginButton {
@@ -48,20 +57,6 @@
     cursor: not-allowed;
     background-color: rgb(252, 173, 173);
   }
-  
-  .loginRegisterButton {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: teal;
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  /* login.css */
 
 .passwordInputContainer {
   position: relative;
@@ -81,6 +76,12 @@
 
 .showPasswordButton:hover {
   color: #333;
+}
+
+.background{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 

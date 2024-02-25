@@ -29,19 +29,6 @@ img:hover{
   color: #000;
 }
 
-.facebook img:hover{
-  color: #1877F2;
-}
-.instagram:hover{
-  color: #ff2a6b;
-}
-.linkedin:hover{
-  color:#0A66C2;
-}
-.youtube:hover{
-  color: red;
-}
-
 .user-panel {
   float: right;
   color: #fff;
@@ -59,12 +46,6 @@ img:hover{
   font-weight: 300;
   cursor: pointer;
 }
-
-.login-register:hover{
-  color: black;
-}
-
-
 
 /* .menu-item{
   margin-left: 60px;

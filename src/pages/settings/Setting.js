@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 import axios from "axios";
 import { Helmet } from "react-helmet";
+import { toast } from "react-toastify";
 
 export default function Settings() {
   const [username, setUsername] = useState("");
@@ -39,6 +40,7 @@ export default function Settings() {
   };
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
+    toast("Logged Out Successfully");
   };
 
   return (
@@ -47,19 +49,13 @@ export default function Settings() {
         <title>Profile</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <div className="settingsWrapper">
         <div className="settingsTitle">
           <span className="settingsUpdateTitle">Update Your Account</span>
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>
-          <label>Profile Picture</label>
-          <div className="settingsPP">
-            <img src="/img/user.webp" alt="" />
-            <label htmlFor="fileInput">
-              <i className="settingsPPIcon far fa-user-circle"></i>
-            </label>
-          </div>
           <label>Username</label>
           <input
             type="text"
@@ -88,12 +84,10 @@ export default function Settings() {
               Profile has been updated...
             </span>
           )}
-        </form>
-        <div className="LogOut">
           <button className="settingsDelete" onClick={handleLogout}>
             {user && "LOGOUT"}
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );

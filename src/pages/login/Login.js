@@ -3,6 +3,8 @@ import "./login.css";
 import { Context } from "../../context/Context";
 import axios from "axios";
 import { Helmet } from "react-helmet";
+import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const userRef = useRef();
@@ -18,8 +20,13 @@ const Login = () => {
         username: userRef.current.value,
         password: passwordRef.current.value,
       });
+      console.log(res.status);
+      if (res.status === 200) {
+        toast("Logged in Successfully");
+      }
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
     } catch (err) {
+      toast.error(err.response.data);
       dispatch({ type: "LOGIN_FAILURE" });
     }
   };
@@ -34,40 +41,51 @@ const Login = () => {
         <title>Login</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
-      <span className="loginTitle">Login</span>
-      <form className="loginForm" onSubmit={handleSubmit}>
-        <label>Username</label>
-        <input
-          type="text"
-          className="loginInput"
-          placeholder="Enter your Username..."
-          ref={userRef}
-        />
-        <label>Password</label>
-        <div className="passwordInputContainer">
+      <div className="background">
+        <span className="loginTitle">Login</span>
+        <form className="loginForm" onSubmit={handleSubmit}>
+          <label>Username</label>
           <input
-            type={showPassword ? "text" : "password"}
+            type="text"
             className="loginInput"
-            placeholder="Enter your Password..."
-            ref={passwordRef}
+            placeholder="Enter your Username..."
+            ref={userRef}
+            required
           />
-          <button
-            type="button"
-            className="showPasswordButton"
-            onClick={togglePasswordVisibility}
-          >
-            {showPassword ? (
-              <img className="svg" src="/svg/eye.svg" alt="" />
-            ) : (
-              <img className="svg" src="/svg/eye-slash.svg" alt="" />
-            )}
+          <label>Password</label>
+          <div className="passwordInputContainer">
+            <input
+              type={showPassword ? "text" : "password"}
+              className="loginInput password"
+              placeholder="Enter your Password..."
+              ref={passwordRef}
+              required
+            />
+            <button
+              type="button"
+              className="showPasswordButton"
+              onClick={togglePasswordVisibility}
+            >
+              {showPassword ? (
+                <img className="svg" src="/svg/eye.svg" alt="" />
+              ) : (
+                <img className="svg" src="/svg/eye-slash.svg" alt="" />
+              )}
+            </button>
+          </div>
+          <button className="loginButton" type="submit" disabled={isFetching}>
+            LOGIN
           </button>
-        </div>
-        <button className="loginButton" type="submit" disabled={isFetching}>
-          LOGIN
-        </button>
-      </form>
+        </form>
+        <h5 className="text-center text-black pt-3">
+          New Here?{" "}
+          <Link className="font-bold text-red-400 link" to="/register">
+            Register
+          </Link>
+        </h5>
+      </div>
     </div>
   );
 };

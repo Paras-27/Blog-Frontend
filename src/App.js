@@ -5,7 +5,6 @@ import Setting from "./pages/settings/Setting";
 import Write from "./pages/Write/Write";
 import Home from "./pages/home/home";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import { Context } from "./context/Context";
 import Pagenotfound from "./pages/Notfound/Pagenotfound.js";
@@ -15,6 +14,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import Contact from "./pages/ContactUs/Contactus";
 import SearchOutput from "./components/search/SearchOutput";
 import SinglePost from "./components/singlePost/SinglePost.js";
+import Register from "./pages/login/Register.js";
 
 function App() {
   const { user } = useContext(Context);

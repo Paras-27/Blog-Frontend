@@ -12,6 +12,7 @@ const About = () => {
         <title>About Us</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <h1>About Us</h1>
       <p>Welcome to Gunjan's Bhajan Blog!</p>
