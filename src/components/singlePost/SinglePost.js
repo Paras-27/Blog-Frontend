@@ -149,7 +149,7 @@ const SinglePost = () => {
         </div>
       ) : (
         <div className="single-main">
-          <div className="singlePostUpdateWrapper">
+          <div className="singlePostWrapper">
             {updateMode && (
               <input
                 type="text"
@@ -176,7 +176,7 @@ const SinglePost = () => {
                   <iframe
                     className="singlePostFrame"
                     loading="lazy"
-                    src={videoLink}
+                    src={videoLink + "?autoplay=1"}
                     title="YouTube Video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

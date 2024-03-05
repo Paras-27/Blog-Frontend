@@ -206,7 +206,7 @@ const Home = () => {
                         </span>
                       </div>
                       {isMultipleOf3(index + 1) && (
-                        <div className="googleAdContainer none">
+                        <div className="googleAdContainer none firstad">
                           <DisplayAdComponent />
                         </div>
                       )}
