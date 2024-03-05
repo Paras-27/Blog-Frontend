@@ -171,7 +171,7 @@ const Home = () => {
             <Header />
             <div className="homePage">
               <div className="posts">
-                <div className="googleAdContainer">
+                <div className="googleAdContainer firstad">
                   <InArticleAdComponent />
                 </div>
                 {posts.map((post, index) => {
@@ -206,7 +206,7 @@ const Home = () => {
                         </span>
                       </div>
                       {isMultipleOf3(index + 1) && (
-                        <div className="googleAdContainer none firstad">
+                        <div className="googleAdContainer none">
                           <DisplayAdComponent />
                         </div>
                       )}

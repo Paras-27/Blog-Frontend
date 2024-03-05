@@ -25,7 +25,7 @@ const SinglePost = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    handleRelatedPostClick();
   }, []);
 
   useEffect(() => {
@@ -89,6 +89,11 @@ const SinglePost = () => {
   };
   const handlePlaceholderClick = () => {
     setShowVideo(true);
+  };
+
+  const handleRelatedPostClick = () => {
+    setShowVideo(false);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -306,6 +311,7 @@ const SinglePost = () => {
                       <Link
                         to={`/post/${post.slug}`}
                         className="relatedPostLink"
+                        onClick={handleRelatedPostClick}
                       >
                         <div className="related-post-image-title">
                           <div className="single-related-image">
