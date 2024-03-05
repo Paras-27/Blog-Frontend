@@ -126,6 +126,13 @@ cursor: pointer;
   width: 100%;
 }
 
+.disclaimier{
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 34px;
+}
+
 .singlePostDescInput {
   border: none;
   color: #666;
@@ -201,7 +208,7 @@ outline: none;
   background-color: white;
   margin-bottom: 8px;
   box-shadow: 8px 7px 8px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.3);
-  height: 200px;
+  height: 233px;
   width: 97%;
   border-radius: 9px;
   display: flex;
@@ -263,14 +270,20 @@ outline: none;
     margin: 16px 0px 16px 0px;
   }
   .related-post-image-title{
-    width: 80%;
+    width: 95%;
   }
   .singlePostVideoLink{
     width: 70%;
   }
+  .disclaimier{
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 560px) {
 
+  .disclaimier{
+    font-size: 17px;
+  }
   .descpara{
     padding-left: 5%;
   }

@@ -174,6 +174,9 @@ const SinglePost = () => {
               />
             )}
           </div>
+          <h1 className="disclaimier">
+            "गीत की धुन को समझने के लिए, वीडियो जरूर देखें।"
+          </h1>
           <div className="singleImgWrapper">
             {showVideo ? (
               <div className="singlePostVideoLink ">
@@ -327,7 +330,7 @@ const SinglePost = () => {
                                 loading="lazy"
                                 decoding="async"
                                 width={286}
-                                height={180}
+                                height={200}
                               />
                             </LazyLoad>
                           </div>
