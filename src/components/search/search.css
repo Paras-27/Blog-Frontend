@@ -9,6 +9,36 @@
   justify-content: center;
 }
 
+.icon{
+  height: 32px;
+  width: 25px;
+}
+
+.submit{
+  border: none;
+  background: none;
+}
+
+.search-form {
+  padding-right: 42px;
+}
+
+.search-input-container {
+  position: relative;
+}
+
+.search-input-container input {
+  padding-right: 40px; 
+}
+
+.search-input-container button {
+  position: absolute;
+  right: 0px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 .search-postImg {
   max-width: 96%;
   max-height: 207px;
@@ -94,5 +124,8 @@
   .search-post{
     width: 304px;
     margin: 0px;
+  }
+  .search-form{
+    padding-left: 42px;
   }
 }

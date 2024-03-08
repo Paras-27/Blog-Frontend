@@ -47,14 +47,9 @@ img:hover{
   cursor: pointer;
 }
 
-/* .menu-item{
-  margin-left: 60px;
-} */
-
 .spacing{
   padding: 2px 27px;
 }
-
 .logo{
   display: flex;
   flex-direction: column;
@@ -62,8 +57,6 @@ img:hover{
 
 .main-logo{
   font-size: 40px;
-  /* margin: 0px;
-  padding: 0; */
   font-family: 'Gambetta', serif;
   letter-spacing: -2px;
   transition: 700ms ease;
@@ -141,12 +134,6 @@ img:hover{
     cursor: pointer;
     margin-left: 15px;
   }
-  .youtube{
-    text-decoration: none;
-    color: #666;
-
-  }
-
   .navbar-toggler{
     border: 1px solid #00000066;
   }
