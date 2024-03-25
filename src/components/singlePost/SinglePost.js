@@ -66,26 +66,38 @@ const SinglePost = () => {
   }, [loading]);
 
   const handleDelete = async () => {
-    try {
-      await axios.delete(`${process.env.REACT_APP_API}/posts/${post._id}`, {
-        data: { username: user.username },
-      });
-      window.location.replace("/");
-    } catch (err) {}
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this post?"
+    );
+    if (confirmDelete) {
+      try {
+        await axios.delete(`${process.env.REACT_APP_API}/posts/${post._id}`, {
+          data: { username: user.username },
+        });
+        window.location.replace("/");
+      } catch (err) {
+        // Handle error
+      }
+    }
   };
 
   const handleUpdate = async () => {
-    try {
-      await axios.put(`${process.env.REACT_APP_API}/posts/${post._id}`, {
-        username: user.username,
-        title,
-        desc,
-        categories,
-        photo,
-        videoLink,
-      });
-      setUpdateMode(false);
-    } catch (err) {}
+    const confirmDelete = window.confirm(
+      "Are you sure you want to update this post?"
+    );
+    if (confirmDelete) {
+      try {
+        await axios.put(`${process.env.REACT_APP_API}/posts/${post._id}`, {
+          username: user.username,
+          title,
+          desc,
+          categories,
+          photo,
+          videoLink,
+        });
+        setUpdateMode(false);
+      } catch (err) {}
+    }
   };
   const handlePlaceholderClick = () => {
     setShowVideo(true);

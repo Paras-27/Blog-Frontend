@@ -63,6 +63,37 @@
     font-size: 16px;
   }
   
+  .categoryItem {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+  
+  .categoryItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .categoryItem.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .categoryItem.selected:hover {
+    background-color: #007bff;
+  }
+  
+  .categoryItem.selected span {
+    margin-left: 0.5rem;
+    color: #fff;
+  }
+
+  .togg{
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    color: gray;
+  }
+
+
   @media only screen and (max-width: 768px) {
     .writeImg {
       margin-left: 0;
@@ -80,3 +111,4 @@
       font-size: 20px;
     }
   }
+  

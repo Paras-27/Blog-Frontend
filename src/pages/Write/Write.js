@@ -12,6 +12,8 @@ const Write = () => {
   const [videoLink, setVideoLink] = useState("");
   const [categories, setCat] = useState([]);
   const { user } = useContext(Context);
+  const [cats, setCats] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState("Categories");
 
   useEffect(() => {
     const savedContent = localStorage.getItem("writeContent");
@@ -24,6 +26,11 @@ const Write = () => {
       setVideoLink(videoLink);
       setCat(categories);
     }
+    const getCats = async () => {
+      const res = await axios.get(`${process.env.REACT_APP_API}/categories`);
+      setCats(res.data);
+    };
+    getCats();
   }, []);
 
   const handleSaveContent = () => {
@@ -45,7 +52,7 @@ const Write = () => {
       username: user.username,
       title,
       desc,
-      categories,
+      categories: selectedCategories,
       photo,
       videoLink,
     };
@@ -55,7 +62,7 @@ const Write = () => {
         `${process.env.REACT_APP_API}/posts`,
         newPost
       );
-      localStorage.removeItem("writeContent"); // Clear saved content after successful submission
+      localStorage.removeItem("writeContent");
       window.location.replace("/post/" + res.data.slug);
     } catch (err) {
       // Handle error
@@ -82,9 +89,8 @@ const Write = () => {
     handleSaveContent();
   };
 
-  const handleCatChange = (e) => {
-    setCat(e.target.value);
-    handleSaveContent();
+  const handleCategoryClick = (categoryName) => {
+    setSelectedCategories(categoryName);
   };
 
   return (
@@ -125,15 +131,36 @@ const Write = () => {
             onChange={handleVideoLinkChange}
           />
         </div>
+
         <div className="writeFormGroup">
-          <input
-            type="text"
-            placeholder="Category"
-            className="writeInput"
-            value={categories}
-            onChange={handleCatChange}
-          />
+          <div className="dropdown">
+            <button
+              className="writeInput togg dropdown-toggle"
+              type="button"
+              id="categoryDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {selectedCategories}
+            </button>
+            <ul className="dropdown-menu" aria-labelledby="categoryDropdown">
+              {cats.map((c, index) => (
+                <li key={index}>
+                  <div
+                    className={`categoryItem ${
+                      selectedCategories === c.name ? "selected" : ""
+                    }`}
+                    onClick={() => handleCategoryClick(c.name)}
+                  >
+                    {c.name}{" "}
+                    {selectedCategories === c.name && <span>(Selected)</span>}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+
         <div className="writeFormGroup">
           <textarea
             placeholder="Tell your story..."
