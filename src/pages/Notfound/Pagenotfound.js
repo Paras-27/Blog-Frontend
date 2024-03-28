@@ -10,6 +10,7 @@ const Pagenotfound = () => {
         <title>Post Not Found</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
       <img src={"/img/notfound.avif"} alt="Not Found" className="pnf-image" />
       <Link to="/" className="pnf-btn">

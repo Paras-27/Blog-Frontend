@@ -84,7 +84,7 @@ const Home = () => {
       const { data } = await axios.get(
         `${process.env.REACT_APP_API}/posts/post-count`
       );
-      setTotalPages(Math.ceil(data / 9));
+      setTotalPages(Math.ceil(data / 12));
       // console.log(data);
     } catch (error) {
       // console.log(error);
@@ -213,22 +213,22 @@ const Home = () => {
                     </div>
                   );
                 })}
-                <div className="post-pages">
-                  {posts.length > 0 && (
-                    <ReactPaginate
-                      previousLabel={"<"}
-                      nextLabel={">"}
-                      breakLabel={"..."}
-                      pageCount={totalPages}
-                      pageRangeDisplayed={2}
-                      marginPagesDisplayed={1}
-                      onPageChange={handlePageClick}
-                      containerClassName={"pagination"}
-                      activeClassName={"active"}
-                      forcePage={initialPage}
-                    />
-                  )}
-                </div>
+              </div>
+              <div className="post-pages">
+                {posts.length > 0 && (
+                  <ReactPaginate
+                    previousLabel={"<"}
+                    nextLabel={">"}
+                    breakLabel={"..."}
+                    pageCount={totalPages}
+                    pageRangeDisplayed={2}
+                    marginPagesDisplayed={1}
+                    onPageChange={handlePageClick}
+                    containerClassName={"pagination"}
+                    activeClassName={"active"}
+                    forcePage={initialPage}
+                  />
+                )}
               </div>
             </div>
           </>

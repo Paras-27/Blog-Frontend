@@ -99,6 +99,7 @@ const Write = () => {
         <title>Write</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
       {photo && <img className="writeImg" src={photo} alt="" />}
       <form className="writeForm">
