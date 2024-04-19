@@ -75,9 +75,10 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-            <p className="copyright">
-              Copyright © 2023 Paras Upadhyay. All rights reserved.
-            </p>
+            <div className="copyright">
+              <p>Copyright © 2024 Paras Upadhyay.</p>
+              <p>All rights reserved</p>
+            </div>
           </div>
         </div>
       </div>

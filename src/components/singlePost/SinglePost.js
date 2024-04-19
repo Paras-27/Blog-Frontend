@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 import Spinner from "../spinner/Spinner";
 import LazyLoad from "react-lazyload";
 import InArticleAdComponent from "../gads/inarticle";
-import DisplayAdComponent from "../gads/gadscomp";
+import InArticleAd2Component from "../gads/gadscomp";
 
 const SinglePost = () => {
   const location = useLocation();
@@ -258,7 +258,7 @@ const SinglePost = () => {
               </h1>
             )}
             <div className="googleAdContainer">
-              <DisplayAdComponent />
+              <InArticleAd2Component />
             </div>
             <div className="singlePostInfo">
               <span className="singlePostAuthor">
@@ -316,7 +316,7 @@ const SinglePost = () => {
               See All Related {post.categories} Here
             </div>
             <div className="googleAdContainer">
-              <DisplayAdComponent />
+              <InArticleAd2Component />
             </div>
             {relatedPosts.length > 0 && (
               <div className="relatedPosts">

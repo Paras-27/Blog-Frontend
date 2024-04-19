@@ -175,6 +175,10 @@
   display: none;
 }
 
+.none1{
+  height: 0;
+}
+
 .firstad{
   margin-bottom: 22px;
 }
@@ -185,7 +189,7 @@
     max-height: 155px;
     max-width: 92%;
     margin-left: 12px;
-  margin-top: 13px;
+    margin-top: 13px;
   }
 
 .post-image{

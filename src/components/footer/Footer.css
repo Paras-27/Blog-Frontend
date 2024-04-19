@@ -94,6 +94,11 @@
   letter-spacing: 0.5px;
   color: white;
 }
+@media screen and (min-width: 992px) {
+  .copyright{
+    display: flex;
+  }
+}
 
 
 @media screen and (max-width: 992px) {

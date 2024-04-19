@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./PrivacyPolicy.css";
+import { Helmet } from "react-helmet";
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -7,6 +8,12 @@ const PrivacyPolicy = () => {
   }, []);
   return (
     <div className="privacy-policy-container">
+      <Helmet>
+        <title>Policy</title>
+        <meta name="description" content="" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
       <h1 className="privacy-policy-title">Privacy Policy</h1>
 
       <p className="privacy-policy-text">

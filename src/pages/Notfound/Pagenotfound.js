@@ -7,7 +7,7 @@ const Pagenotfound = () => {
   return (
     <div className="pnf">
       <Helmet>
-        <title>Post Not Found</title>
+        <title>Error</title>
         <meta name="description" content="" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
