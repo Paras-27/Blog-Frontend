@@ -171,16 +171,18 @@
   user-select: none; 
 }
 
-.none{
-  display: none;
-}
-
-.none1{
-  height: 0;
-}
-
 .firstad{
-  margin-bottom: 22px;
+  margin-bottom: 22px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .none{
+    display: none;
+  }
+  
+  .none1{
+    height: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
