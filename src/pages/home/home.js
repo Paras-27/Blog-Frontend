@@ -8,8 +8,8 @@ import Pagenotfound from "../Notfound/Pagenotfound";
 import "../../components/header/Header.js";
 import Header from "../../components/header/Header.js";
 import ReactPaginate from "react-paginate";
-import InArticleAdComponent from "../../components/gads/inarticle.js";
 import InArticleAd2Component from "../../components/gads/gadscomp.js";
+import DisplayAdComponent from "../../components/gads/display.js";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -206,8 +206,8 @@ const Home = () => {
                         </span>
                       </div>
                       {isMultipleOf3(index + 1) && (
-                        <div className="googleAdContainer none1">
-                          <InArticleAdComponent className="none" />
+                        <div className="googleAdContainer none">
+                          <DisplayAdComponent />
                         </div>
                       )}
                     </div>
