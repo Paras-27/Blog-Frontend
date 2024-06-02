@@ -96,7 +96,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Bhajan Sangeet</title>
+        <title>Bhajan Lekh</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
@@ -111,7 +111,7 @@ const Home = () => {
         {/* <!-- canonical tag --> */}
         <link rel="preload" as="image" href="img/diwali.webp" />
 
-        <link rel="canonical" href="https://gunjan-blog.netlify.app/" />
+        <link rel="canonical" href="https://bhajanlekh.com/" />
 
         {/* <!-- Open Graph Tags --> */}
         <meta property="og:locale" content="en_US" />
@@ -124,7 +124,7 @@ const Home = () => {
           property="og:description"
           content="Find lyrics of every regional bhajan in Hindi as well as in English."
         />
-        <meta property="og:url" content="https://gunjan-blog.netlify.app/" />
+        <meta property="og:url" content="https://bhajanlekh.com/" />
         <meta property="og:site_name" content="Gunjan-Blog" />
         <meta
           property="article:modified_time"
@@ -136,8 +136,8 @@ const Home = () => {
           {`{
             "@context": "https://schema.org",
             "@type": "MusicComposition",
-            "@id": "https://gunjan-blog.netlify.app/",
-            "url": "https://gunjan-blog.netlify.app/",
+            "@id": "https://bhajanlekh.com/",
+            "url": "https://bhajanlekh.com/",
             "name": "Gunjan-Blog - Find All Bhajan Lyrics In Hindi",
             "datePublished": "2023-07-21T12:39:28+00:00",
             "dateModified": "2023-12-14T17:59:22+00:00",
@@ -145,7 +145,7 @@ const Home = () => {
             "inLanguage": ["en-US", "hi"],
             "potentialAction": {
               "@type": "ReadAction",
-              "target": ["https://gunjan-blog.netlify.app/"]
+              "target": ["https://bhajanlekh.com/"]
             },
             "author": {
               "@type": "Person",

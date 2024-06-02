@@ -20,4 +20,3 @@ Disallow: /author/*
 Disallow: /page/*/*
 Disallow: /archives/
 
-Sitemap:https://gunjan-blog.netlify.app/sitemap.xml
