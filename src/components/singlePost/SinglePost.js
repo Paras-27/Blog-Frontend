@@ -117,17 +117,14 @@ const SinglePost = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="category" content={categories} />
         <link rel="preload" as="image" href={post.photo} />
-        <link
-          rel="canonical"
-          href={`https://gunjan-blog.netlify.app/post/${path}`}
-        />
+        <link rel="canonical" href={`https://bhajanlekh.com/post/${path}`} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={desc} />
         <meta
           property="og:url"
-          content={`https://gunjan-blog.netlify.app/post/${path}`}
+          content={`https://bhajanlekh.com/post/${path}`}
         />
         <meta property="og:site_name" content="Gunjan-Blog" />
         <meta
@@ -142,7 +139,7 @@ const SinglePost = () => {
             "@type": "BlogPosting",
             mainEntityOfPage: {
               "@type": "MusicComposition",
-              "@id": `https://gunjan-blog.netlify.app/post/${path}`,
+              "@id": `https://bhajanlekh.com/post/${path}`,
             },
             headline: title,
             image: [post.photo],

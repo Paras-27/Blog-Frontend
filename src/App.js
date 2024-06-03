@@ -44,6 +44,7 @@ function App() {
           <Route path="/settings" element={user ? <Setting /> : <Register />} />
           <Route path="/post/:postId" element={<SinglePost />} />
           <Route path="/not-found" element={<Pagenotfound />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
       <Footer />
