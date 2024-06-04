@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://gunjan-blog.netlify.app/*"
+  to = "https://bhajanlekh.com/"
+  status = 301
+  force = true
