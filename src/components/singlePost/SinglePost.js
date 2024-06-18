@@ -126,7 +126,7 @@ const SinglePost = () => {
           property="og:url"
           content={`https://bhajanlekh.com/post/${path}`}
         />
-        <meta property="og:site_name" content="Gunjan-Blog" />
+        <meta property="og:site_name" content="Bhajan Lekh" />
         <meta
           property="article:modified_time"
           content="2023-12-14T17:59:22+00:00"
@@ -138,7 +138,7 @@ const SinglePost = () => {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             mainEntityOfPage: {
-              "@type": "MusicComposition",
+              "@type": "WebPage",
               "@id": `https://bhajanlekh.com/post/${path}`,
             },
             headline: title,
@@ -153,7 +153,22 @@ const SinglePost = () => {
             publisher: {
               "@type": "Person",
               name: "Gunjan Upadhyay",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://bhajanlekh.com/logo.png",
+              },
             },
+            keywords:
+              "Bhajan, Shree, Mata Rani, Mata ji, Maiya, Ganpati, Ganesh, Gajanan, Krishna, Radhe Krishna, Kanha, Kanhaiya, Krishan, Kishan, Bajan, bhjn, Bajrang Bali, Hanuman, Balaji, Bageshwar Dham Sarkar, Pashupatinath, Shiv, Bholenath, Bhole baba, Vishnu, Radha Rani",
+          })}
+        </script>
+
+        <script defer type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Bhajan Lekh",
+            url: "https://bhajanlekh.com",
           })}
         </script>
       </Helmet>

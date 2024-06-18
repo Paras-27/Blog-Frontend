@@ -103,62 +103,76 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Gunjan's Blog - A blog website for sharing bhajan lyrics and video song."
+          content="Bhajan Lekh - A blog website for sharing bhajan lyrics and video songs."
         />
         <meta name="keywords" content="blog, travel, bhajan, recipe, story" />
         <meta name="category" content="travel, bhajan, recipe, story" />
 
-        {/* <!-- canonical tag --> */}
         <link rel="preload" as="image" href="img/diwali.webp" />
-
         <link rel="canonical" href="https://bhajanlekh.com/" />
 
-        {/* <!-- Open Graph Tags --> */}
+        {/* Open Graph Tags */}
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Gunjan-Blog - Find All Bhajan Lyrics In Hindi"
+          content="Bhajan Lekh - Find All Bhajan Lyrics In Hindi"
         />
         <meta
           property="og:description"
           content="Find lyrics of every regional bhajan in Hindi as well as in English."
         />
         <meta property="og:url" content="https://bhajanlekh.com/" />
-        <meta property="og:site_name" content="Gunjan-Blog" />
+        <meta property="og:site_name" content="Bhajan Lekh" />
         <meta
           property="article:modified_time"
           content="2023-12-14T17:59:22+00:00"
         />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <script type="application/ld+json" class="yoast-schema-graph">
+        {/* JSON-LD Schema for Blog Posting */}
+        <script defer type="application/ld+json" className="yoast-schema-graph">
           {`{
+      "@context": "https://schema.org",
+      "@type": "MusicComposition",
+      "@id": "https://bhajanlekh.com/",
+      "url": "https://bhajanlekh.com/",
+      "name": "Bhajan Lekh - Find All Bhajan Lyrics In Hindi",
+      "datePublished": "2023-07-21T12:39:28+00:00",
+      "dateModified": "2023-12-14T17:59:22+00:00",
+      "description": "Find lyrics of every regional bhajan in Hindi as well as in English.",
+      "inLanguage": ["en-US", "hi"],
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": ["https://bhajanlekh.com/"]
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Gunjan Upadhyay"
+      },
+      "lyricist": {
+        "@type": "Person",
+        "name": "Gunjan Upadhyay"
+      },
+      "keywords": "Bhajan, Shree, Mata Rani, Mata ji, Maiya, Ganpati, Ganesh, Gajanan, Krishna, Radhe Krishna, Kanha, Kanhaiya, Krishan, Kishan, Bajan, bhjn, Bajrang Bali, Hanuman, Balaji, Bageshwar Dham Sarkar, Pashupatinath, Shiv, Bholenath, Bhole baba, Vishnu, Radha Rani"
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bhajanlekh.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }`}
+        </script>
+        {/* JSON-LD Schema for Website */}
+        <script defer type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "MusicComposition",
-            "@id": "https://bhajanlekh.com/",
-            "url": "https://bhajanlekh.com/",
-            "name": "Gunjan-Blog - Find All Bhajan Lyrics In Hindi",
-            "datePublished": "2023-07-21T12:39:28+00:00",
-            "dateModified": "2023-12-14T17:59:22+00:00",
-            "description": "Find lyrics of every regional bhajan in Hindi as well as in English.",
-            "inLanguage": ["en-US", "hi"],
-            "potentialAction": {
-              "@type": "ReadAction",
-              "target": ["https://bhajanlekh.com/"]
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Gunjan Upadhyay"
-            },
-            "lyricist": {
-              "@type": "Person",
-              "name": "Gunjan Upadhyay"
-            },
-            "keywords": "Bhajan, Shree, Mata Rani, Mata ji, Maiya, Ganpati, Ganesh, Gajanan, Krishna, Radhe Krishna, Kanha, Kanhaiya, Krishan, Kishan, Bajan, bhjn, Bajrang Bali, Hanuman, Balaji, Bageshwar Dham Sarkar, Pashupatinath, Shiv, Bholenath, Bhole baba, Vishnu, Radha Rani"
-          }`}
+            "@type": "WebSite",
+            name: "Bhajan Lekh",
+            url: "https://bhajanlekh.com",
+          })}
         </script>
       </Helmet>
+
       <div className={`home ${loading ? "spinner" : ""}`}>
         {loading ? (
           <div>

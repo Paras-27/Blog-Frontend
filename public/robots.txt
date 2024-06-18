@@ -1,5 +1,8 @@
 User-agent: *
-Disallow: 
 Disallow: /cgi-bin/
 Disallow: /api/
-Sitemap: https://bhajanlekh.com/mysitemap.xml
+
+# Allow ads.txt
+Allow: /ads.txt
+
+Sitemap: https://bhajanlekh.com/sitemap.xml
