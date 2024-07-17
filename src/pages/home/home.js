@@ -153,7 +153,7 @@ const Home = () => {
       "lyricist": {
         "@type": "Person",
         "name": "Gunjan Upadhyay"
-      }
+      },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://bhajanlekh.com/?s={search_term_string}",
