@@ -153,12 +153,7 @@ const Home = () => {
       "lyricist": {
         "@type": "Person",
         "name": "Gunjan Upadhyay"
-      },
-      "keywords": {
-        "Bhajan, Shree, Mata Rani, Mata ji, Maiya, Ganpati, Ganesh, Gajanan, Krishna, Radhe Krishna, Kanha, Kanhaiya,
-        Krishan, Kishan, Bajan, bhjn, Bajrang Bali, Hanuman, Balaji, Bageshwar Dham Sarkar, Pashupatinath, Shiv, Bholenath, Bhole baba, 
-        Vishnu, Radha Rani"
-      },
+      }
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://bhajanlekh.com/?s={search_term_string}",
