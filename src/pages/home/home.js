@@ -142,10 +142,6 @@ const Home = () => {
       "dateModified": "2023-12-14T17:59:22+00:00",
       "description": "Find lyrics of every regional bhajan in Hindi as well as in English.",
       "inLanguage": ["en-US", "hi"],
-      "potentialAction": {
-        "@type": "ReadAction",
-        "target": ["https://bhajanlekh.com/"]
-      },
       "author": {
         "@type": "Person",
         "name": "Gunjan Upadhyay"
